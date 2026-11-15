@@ -1,0 +1,501 @@
+{
+ "cultivos": [
+  {
+   "codigo": "soja",
+   "nombre": "Soja de primera",
+   "temporada": "verano",
+   "color": "#4E7F2A",
+   "icono": "soja",
+   "siembra": "15/11",
+   "ciclo_dias": 135,
+   "forraje": 0.0,
+   "notas": "Deja poco rastrojo: el suelo queda expuesto en otoño si no sigue un cultivo.",
+   "aportes": [
+    "fija_n"
+   ]
+  },
+  {
+   "codigo": "soja2",
+   "nombre": "Soja de segunda",
+   "temporada": "verano",
+   "color": "#7FA845",
+   "icono": "soja",
+   "siembra": "15/12",
+   "ciclo_dias": 110,
+   "forraje": 0.0,
+   "notas": "Sembrada sobre rastrojo de invierno; ciclo más corto y más riesgo de seca en marzo.",
+   "aportes": [
+    "fija_n"
+   ]
+  },
+  {
+   "codigo": "maiz",
+   "nombre": "Maíz de primera",
+   "temporada": "verano",
+   "color": "#E07B1A",
+   "icono": "maiz",
+   "siembra": "01/10",
+   "ciclo_dias": 150,
+   "forraje": 0.0,
+   "notas": "Mucho rastrojo: protege el suelo y suma carbono. Muy sensible a seca en floración.",
+   "aportes": []
+  },
+  {
+   "codigo": "maiz2",
+   "nombre": "Maíz de segunda",
+   "temporada": "verano",
+   "color": "#EFA45A",
+   "icono": "maiz",
+   "siembra": "15/12",
+   "ciclo_dias": 125,
+   "forraje": 0.0,
+   "notas": "",
+   "aportes": []
+  },
+  {
+   "codigo": "sorgo",
+   "nombre": "Sorgo granífero",
+   "temporada": "verano",
+   "color": "#B5651D",
+   "icono": "sorgo",
+   "siembra": "15/11",
+   "ciclo_dias": 125,
+   "forraje": 0.4,
+   "notas": "Más tolerante a seca y calor que el maíz; rastrojo abundante.",
+   "aportes": [
+    "raiz_profunda",
+    "tolera_seca"
+   ]
+  },
+  {
+   "codigo": "girasol",
+   "nombre": "Girasol",
+   "temporada": "verano",
+   "color": "#D99A00",
+   "icono": "girasol",
+   "siembra": "01/10",
+   "ciclo_dias": 130,
+   "forraje": 0.0,
+   "notas": "Raíz profunda; deja poco rastrojo.",
+   "aportes": [
+    "raiz_profunda",
+    "tolera_seca"
+   ]
+  },
+  {
+   "codigo": "trigo",
+   "nombre": "Trigo",
+   "temporada": "invierno",
+   "color": "#B08A1E",
+   "icono": "trigo",
+   "siembra": "10/06",
+   "ciclo_dias": 170,
+   "forraje": 0.0,
+   "notas": "Helada en floración (oct) y calor en llenado (nov) son sus riesgos climáticos.",
+   "aportes": []
+  },
+  {
+   "codigo": "cebada",
+   "nombre": "Cebada",
+   "temporada": "invierno",
+   "color": "#CDB46A",
+   "icono": "cebada",
+   "siembra": "20/06",
+   "ciclo_dias": 155,
+   "forraje": 0.0,
+   "notas": "",
+   "aportes": []
+  },
+  {
+   "codigo": "colza",
+   "nombre": "Colza / canola",
+   "temporada": "invierno",
+   "color": "#C9B400",
+   "icono": "colza",
+   "siembra": "01/05",
+   "ciclo_dias": 170,
+   "forraje": 0.0,
+   "notas": "Libera el campo temprano (oct-nov) y permite soja de segunda en fecha.",
+   "aportes": [
+    "raiz_profunda"
+   ]
+  },
+  {
+   "codigo": "cobertura",
+   "nombre": "Cultivo de cobertura (avena negra / raigrás / vicia)",
+   "temporada": "invierno",
+   "color": "#2E9C8F",
+   "icono": "cobertura",
+   "siembra": "01/04",
+   "ciclo_dias": 180,
+   "forraje": 0.2,
+   "notas": "No se cosecha: protege el suelo en otoño-invierno y aporta carbono. Consume agua del perfil antes del cultivo de verano: terminarlo a tiempo en años secos.",
+   "aportes": [
+    "cubre"
+   ]
+  },
+  {
+   "codigo": "verdeo",
+   "nombre": "Verdeo de invierno (avena / raigrás para pastoreo)",
+   "temporada": "invierno",
+   "color": "#58B368",
+   "icono": "verdeo",
+   "siembra": "20/03",
+   "ciclo_dias": 185,
+   "forraje": 0.9,
+   "notas": "Forraje de invierno para el ganado; el pisoteo con suelo húmedo puede compactar.",
+   "aportes": [
+    "cubre"
+   ]
+  },
+  {
+   "codigo": "sorgo_forrajero",
+   "nombre": "Sorgo forrajero / pastoreo",
+   "temporada": "verano",
+   "color": "#B97A4F",
+   "icono": "sorgo",
+   "siembra": "01/11",
+   "ciclo_dias": 140,
+   "forraje": 0.9,
+   "notas": "",
+   "aportes": [
+    "raiz_profunda",
+    "tolera_seca"
+   ]
+  },
+  {
+   "codigo": "pradera",
+   "nombre": "Pradera (festuca + trébol blanco + lotus)",
+   "temporada": "perenne",
+   "color": "#1F5E3A",
+   "icono": "pradera",
+   "siembra": "15/04",
+   "ciclo_dias": 515,
+   "forraje": 1.0,
+   "notas": "Cubre el suelo todo el año y recupera carbono (La Estanzuela: con pasturas el suelo se mantiene cerca de 2,5 % de carbono contra 1,5 % en agricultura continua).",
+   "aportes": [
+    "fija_n",
+    "recupera"
+   ]
+  },
+  {
+   "codigo": "alfalfa",
+   "nombre": "Alfalfa",
+   "temporada": "perenne",
+   "color": "#8E4FA0",
+   "icono": "alfalfa",
+   "siembra": "01/04",
+   "ciclo_dias": 515,
+   "forraje": 1.0,
+   "notas": "Pide pH ≥ 6 y buen drenaje; no tolera anegamiento.",
+   "aportes": [
+    "fija_n",
+    "raiz_profunda",
+    "recupera"
+   ]
+  },
+  {
+   "codigo": "campo_natural",
+   "nombre": "Campo natural",
+   "temporada": "perenne",
+   "color": "#8D9B5A",
+   "icono": "campo",
+   "siembra": "15/04",
+   "ciclo_dias": 365,
+   "forraje": 0.8,
+   "notas": "",
+   "aportes": [
+    "recupera"
+   ]
+  },
+  {
+   "codigo": "barbecho",
+   "nombre": "Barbecho (suelo sin cultivo)",
+   "temporada": "barbecho",
+   "color": "#9A8C7A",
+   "icono": "barbecho",
+   "siembra": "01/01",
+   "ciclo_dias": 0,
+   "forraje": 0.0,
+   "notas": "Sin cultivo: el suelo queda con el rastrojo anterior, que se degrada mes a mes.",
+   "aportes": []
+  }
+ ],
+ "aportes": {
+  "fija_n": {
+   "nombre": "Fija nitrógeno",
+   "explicacion": "Las leguminosas (soja, trébol, lotus, alfalfa) toman nitrógeno del aire con las bacterias de sus raíces. En la soja de grano casi todo se va con la cosecha; las pasturas de trébol, lotus y alfalfa dejan mucho más en el suelo para el cultivo que sigue."
+  },
+  "cubre": {
+   "nombre": "Cubre el suelo en invierno",
+   "explicacion": "Ocupa los meses en que el campo quedaría desnudo: protege el suelo de la lluvia que erosiona, frena malezas y suma raíces y rastrojo, que con los años se vuelven materia orgánica."
+  },
+  "raiz_profunda": {
+   "nombre": "Raíz profunda",
+   "explicacion": "Llega a capas que los otros cultivos no alcanzan: abre caminos para que el agua infiltre, ayuda a romper capas compactadas y sube nutrientes de abajo."
+  },
+  "tolera_seca": {
+   "nombre": "Aguanta la seca",
+   "explicacion": "Pierde menos rinde cuando falta agua, o la busca más hondo: reparte el riesgo de los años secos."
+  },
+  "recupera": {
+   "nombre": "Recupera el suelo",
+   "explicacion": "Varios años de pastura sin laboreo: las raíces permanentes recuperan materia orgánica y estructura. Es la base del sistema agrícola-pastoril de La Estanzuela."
+  }
+ },
+ "rotaciones": [
+  {
+   "id": "soja_continua",
+   "nombre": "Soja continua con barbecho de invierno",
+   "descripcion": "La rotación más común en la agricultura uruguaya reciente: soja todos los veranos y el suelo sin cultivo en otoño-invierno.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "barbecho",
+     "soja"
+    ]
+   ]
+  },
+  {
+   "id": "soja_cobertura",
+   "nombre": "Soja con cultivo de cobertura",
+   "descripcion": "Igual que la soja continua, pero con avena negra o raigrás en invierno para cubrir el suelo.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "cobertura",
+     "soja"
+    ]
+   ]
+  },
+  {
+   "id": "trigo_soja_maiz",
+   "nombre": "Trigo / soja de segunda → maíz",
+   "descripcion": "Dos cultivos en el primer año y maíz con cobertura previa en el segundo: más rastrojo y dos fuentes de ingreso.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "trigo",
+     "soja2"
+    ],
+    [
+     "cobertura",
+     "maiz"
+    ]
+   ]
+  },
+  {
+   "id": "colza_trigo_maiz",
+   "nombre": "Colza / soja 2ª → trigo / soja 2ª → maíz",
+   "descripcion": "Rotación intensiva y diversa de tres años: tres cultivos de invierno distintos para cortar malezas y enfermedades.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "colza",
+     "soja2"
+    ],
+    [
+     "trigo",
+     "soja2"
+    ],
+    [
+     "cobertura",
+     "maiz"
+    ]
+   ]
+  },
+  {
+   "id": "maiz_soja_cobertura",
+   "nombre": "Maíz → soja, siempre con cobertura",
+   "descripcion": "Alterna gramínea y leguminosa de verano y nunca deja el suelo desnudo en invierno.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "cobertura",
+     "maiz"
+    ],
+    [
+     "cobertura",
+     "soja"
+    ]
+   ]
+  },
+  {
+   "id": "girasol_trigo_soja",
+   "nombre": "Girasol → trigo / soja 2ª",
+   "descripcion": "Suma un cultivo de raíz profunda y fecha temprana, que libera el campo en febrero.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "cobertura",
+     "girasol"
+    ],
+    [
+     "trigo",
+     "soja2"
+    ]
+   ]
+  },
+  {
+   "id": "agricola_pastoril",
+   "nombre": "Agrícola-pastoril: 2 años de cultivos + 3 de pradera",
+   "descripcion": "El sistema clásico de Uruguay (La Estanzuela): cultivos de grano y luego una pradera de festuca, trébol y lotus que recupera el suelo.",
+   "tipo": "agrícola-ganadera",
+   "anios": [
+    [
+     "cobertura",
+     "soja"
+    ],
+    [
+     "trigo",
+     "soja2"
+    ],
+    [
+     "pradera",
+     "pradera"
+    ],
+    [
+     "pradera",
+     "pradera"
+    ],
+    [
+     "pradera",
+     "pradera"
+    ]
+   ]
+  },
+  {
+   "id": "verdeo_sorgo",
+   "nombre": "Verdeo de invierno → sorgo forrajero",
+   "descripcion": "Para campos con ganado: forraje en invierno y en verano, con poco suelo descubierto.",
+   "tipo": "ganadera",
+   "anios": [
+    [
+     "verdeo",
+     "sorgo_forrajero"
+    ]
+   ]
+  },
+  {
+   "id": "pradera_permanente",
+   "nombre": "Pradera permanente (renovación cada 4 años)",
+   "descripcion": "Para suelos frágiles, con pendiente o muy erosionados: cobertura todo el año y ganadería.",
+   "tipo": "ganadera",
+   "anios": [
+    [
+     "pradera",
+     "pradera"
+    ],
+    [
+     "pradera",
+     "pradera"
+    ],
+    [
+     "pradera",
+     "pradera"
+    ],
+    [
+     "pradera",
+     "pradera"
+    ]
+   ]
+  },
+  {
+   "id": "alfalfa_maiz",
+   "nombre": "Alfalfa 3 años → maíz → trigo / soja 2ª",
+   "descripcion": "Forraje de alta calidad y nitrógeno para el maíz que sigue. Pide pH 6 o más y buen drenaje.",
+   "tipo": "agrícola-ganadera",
+   "anios": [
+    [
+     "alfalfa",
+     "alfalfa"
+    ],
+    [
+     "alfalfa",
+     "alfalfa"
+    ],
+    [
+     "alfalfa",
+     "alfalfa"
+    ],
+    [
+     "cobertura",
+     "maiz"
+    ],
+    [
+     "trigo",
+     "soja2"
+    ]
+   ]
+  },
+  {
+   "id": "campo_natural",
+   "nombre": "Campo natural con manejo del pastoreo",
+   "descripcion": "Mantener o recuperar el campo natural, ajustando la carga.",
+   "tipo": "ganadera",
+   "anios": [
+    [
+     "campo_natural",
+     "campo_natural"
+    ]
+   ]
+  },
+  {
+   "id": "trigo_colza_cebada",
+   "nombre": "Trigo → colza → cebada",
+   "descripcion": "Tres cultivos de invierno distintos, un año cada uno, para cortar malezas y enfermedades; el suelo queda con rastrojo en verano. Es la rotación típica de los climas de verano corto.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "trigo",
+     "barbecho"
+    ],
+    [
+     "colza",
+     "barbecho"
+    ],
+    [
+     "cebada",
+     "barbecho"
+    ]
+   ]
+  },
+  {
+   "id": "maiz_trigo_cobertura",
+   "nombre": "Maíz → trigo, con cobertura",
+   "descripcion": "Alterna un cultivo de verano y uno de invierno, con cobertura antes del maíz: más rastrojo y menos suelo desnudo, sin soja.",
+   "tipo": "agrícola",
+   "anios": [
+    [
+     "cobertura",
+     "maiz"
+    ],
+    [
+     "trigo",
+     "barbecho"
+    ]
+   ]
+  }
+ ],
+ "departamentos": [
+  "ARTIGAS",
+  "CANELONES",
+  "CERRO LARGO",
+  "COLONIA",
+  "DURAZNO",
+  "FLORES",
+  "FLORIDA",
+  "LAVALLEJA",
+  "MALDONADO",
+  "MONTEVIDEO",
+  "PAYSANDU",
+  "RIO NEGRO",
+  "RIVERA",
+  "ROCHA",
+  "SALTO",
+  "SAN JOSE",
+  "SORIANO",
+  "TACUAREMBO",
+  "TREINTA Y TRES"
+ ]
+}

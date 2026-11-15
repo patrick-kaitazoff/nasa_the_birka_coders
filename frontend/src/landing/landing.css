@@ -1,0 +1,199 @@
+/* Página de presentación: el campo de trigo va fijo de fondo y el contenido corre por encima. */
+:root {
+  --lp-tinta: #fff8ec;
+  --lp-tinta-2: rgba(255, 248, 236, 0.78);
+  --lp-trigo: #f2c873;
+  --lp-trigo-fuerte: #e7a93e;
+  --lp-noche: #1e1220;
+  --lp-verde: #1f4d3a;
+  /* Ciruela oscuro, sacado del cielo del atardecer (antes azul marino, 21 20 42) */
+  --lp-caja: rgba(34, 19, 32, 0.62);
+  --lp-borde: rgba(255, 236, 200, 0.16);
+  --lp-titulo: "Fraunces", Georgia, serif;
+  --lp-fuente: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+/* sin fondo propio: detrás está la foto del trigo que pone index.html */
+body { margin: 0; background: transparent; color: var(--lp-tinta); font-family: var(--lp-fuente); -webkit-font-smoothing: antialiased; }
+a { color: inherit; }
+
+/* el trigo 3D aparece fundiéndose sobre la foto cuando ya dibujó su primer cuadro */
+.lp-lienzo { position: fixed; inset: 0; width: 100vw; height: 100vh; height: 100lvh; display: block; z-index: 0; touch-action: pan-y;
+  opacity: 0; transition: opacity .6s ease; }
+.lp-lienzo.listo { opacity: 1; }
+.lp-velo { position: fixed; inset: 0; z-index: 1; pointer-events: none; opacity: 0; transition: opacity .2s linear;
+  background: radial-gradient(120% 90% at 50% 40%, rgba(22, 13, 20, .5), rgba(14, 10, 22, .85)); }
+/* sombra detrás del texto de la portada: oscurece desde la izquierda, donde está el texto, y se abre hacia el sol, que queda a la vista. Se va al
+   bajar la página (Landing.tsx), donde ya oscurece el velo de cada sección */
+.lp-sombra { position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(20, 13, 28, .66) 0%, rgba(20, 13, 28, .5) 32%, rgba(20, 13, 28, .18) 58%, rgba(20, 13, 28, 0) 75%),
+    linear-gradient(0deg, rgba(20, 13, 28, .35) 0%, rgba(20, 13, 28, 0) 35%); }
+.sin-webgl .lp-lienzo { display: none; }
+/* sin WebGL queda de fondo la foto del trigo (index.html) */
+
+.lp main, .lp-barra, .lp-pie { position: relative; z-index: 2; }
+
+/* barra */
+.lp-barra { position: fixed; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 18px; padding: 14px clamp(16px, 4vw, 40px);
+  background: linear-gradient(180deg, rgba(12, 11, 26, .55), rgba(12, 11, 26, 0)); z-index: 5; }
+/* fondo que aparece al bajar: va en ::before para que el fundido sea con opacidad (un degradé no se
+   anima hacia un color liso) */
+.lp-barra::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none; opacity: 0;
+  background: rgba(30, 17, 28, .74); -webkit-backdrop-filter: blur(14px) saturate(1.25); backdrop-filter: blur(14px) saturate(1.25);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .07), 0 10px 28px rgba(0, 0, 0, .22); transition: opacity .35s ease; }
+.lp-barra.con-fondo::before { opacity: 1; }
+@media (prefers-reduced-motion: reduce) { .lp-barra::before { transition: none; } }
+.lp-marca { display: inline-flex; align-items: center; gap: 10px; font-family: var(--lp-titulo); font-weight: 700; font-size: 20px; text-decoration: none; }
+.lp-enlaces { display: flex; gap: 22px; margin-left: auto; font-size: 14px; }
+.lp-enlaces a { text-decoration: none; opacity: .82; }
+.lp-enlaces a:hover { opacity: 1; text-decoration: underline; text-underline-offset: 4px; }
+@media (max-width: 820px) { .lp-enlaces { display: none; } .lp-barra .selector-idioma { margin-left: auto; } }
+
+/* botones */
+.lp-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 24px; border-radius: 999px;
+  background: var(--lp-trigo); color: #2a1c06; font-weight: 650; font-size: 16px; text-decoration: none; border: 1px solid transparent;
+  box-shadow: 0 8px 30px rgba(231, 169, 62, .35); transition: transform .15s ease, box-shadow .15s ease, background .15s ease; }
+.lp-btn:hover { background: #ffd98c; transform: translateY(-1px); box-shadow: 0 12px 36px rgba(231, 169, 62, .5); }
+.lp-btn.claro { background: rgba(255, 248, 236, .1); color: var(--lp-tinta); border-color: rgba(255, 248, 236, .45); box-shadow: none; backdrop-filter: blur(6px); }
+.lp-btn.claro:hover { background: rgba(255, 248, 236, .2); }
+.lp-btn.chico { min-height: 38px; padding: 0 16px; font-size: 14px; }
+.lp-btn:focus-visible, .lp a:focus-visible, .selector-idioma button:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+@media (max-width: 520px) { .lp-barra .lp-btn.chico { display: none; } }
+
+/* portada */
+.lp-heroe { min-height: 100vh; min-height: 100svh; display: flex; flex-direction: column; justify-content: flex-start;
+  padding: clamp(84px, 14vh, 160px) clamp(16px, 6vw, 80px) 40px; max-width: 980px; }
+.lp-antetitulo { margin: 0 0 18px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--lp-trigo); font-weight: 600; }
+.lp-heroe h1 { margin: 0; font-family: var(--lp-titulo); font-weight: 700; font-size: clamp(42px, 7.4vw, 92px); line-height: .98; letter-spacing: -.02em;
+  text-shadow: 0 4px 40px rgba(10, 8, 30, .45); }
+.lp-heroe h1 em { display: block; font-style: normal; color: var(--lp-trigo); text-shadow: 0 2px 4px rgba(20, 10, 24, .55), 0 4px 40px rgba(10, 8, 30, .6); }
+.lp-bajada { margin: 22px 0 0; max-width: 620px; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.55; color: rgba(255, 248, 236, .94); text-shadow: 0 1px 2px rgba(10, 8, 30, .5), 0 2px 18px rgba(10, 8, 30, .7); }
+.lp-acciones { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.lp-pista { position: fixed; z-index: 3; left: 50%; bottom: calc(3vh + 78px); transform: translateX(-50%); margin: 0; display: inline-flex; align-items: center; gap: 10px;
+  padding: 9px 16px; border-radius: 999px; background: rgba(34, 19, 32, .5); border: 1px solid var(--lp-borde); backdrop-filter: blur(6px);
+  font-size: 14px; color: var(--lp-tinta); transition: opacity .8s ease, transform .8s ease; pointer-events: none; white-space: nowrap; }
+.lp-pista.oculta { opacity: 0; transform: translate(-50%, 8px); }
+/* en una pantalla baja tapaba los botones: queda solo la flecha para bajar */
+@media (max-height: 760px) { .lp-pista { display: none; } }
+/* el latido es un aro que crece y se apaga (escala y opacidad): así lo mueve la placa y no se queda quieto cuando la
+   página está ocupada armando el trigo 3D. Antes era una sombra que crecía, y eso lo dibuja la página */
+.lp-pista-punto { position: relative; width: 10px; height: 10px; border-radius: 50%; background: var(--lp-trigo); }
+.lp-pista-punto::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: rgba(242, 200, 115, .7); opacity: 0; animation: lp-latido 1.8s infinite; }
+@keyframes lp-latido { 0% { transform: scale(1); opacity: .7; } 70%, 100% { transform: scale(3.4); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .lp-pista-punto::after { animation: none; } }
+/* aviso de que abajo están los ejemplos: abajo de todo de la portada, con la flecha que rebota */
+/* la flecha doble para bajar a los ejemplos: centrada abajo de la pantalla, sin texto, clara con una sombra
+   oscura para que se lea sobre el trigo; se va apenas se baja */
+.lp-bajar { position: fixed; left: 50%; bottom: 3vh; z-index: 3; transform: translateX(-50%); display: grid; place-items: center;
+  width: 64px; height: 64px; color: #fff8ec; text-decoration: none; transition: opacity .4s ease;
+  filter: drop-shadow(0 1px 2px rgba(10, 8, 30, .7)) drop-shadow(0 4px 14px rgba(10, 8, 30, .6)); }
+.lp-bajar svg { animation: lp-rebote 1.8s cubic-bezier(.45, 0, .55, 1) infinite; }
+.lp-bajar:hover { color: var(--lp-trigo); }
+.lp-bajar:focus-visible { outline: 2px solid #fff8ec; outline-offset: 2px; border-radius: 12px; }
+.lp-bajar.oculta { opacity: 0; pointer-events: none; }
+.lp.despegando .lp-bajar { opacity: 0; }
+@keyframes lp-rebote { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(6px); } }
+@media (prefers-reduced-motion: reduce) { .lp-bajar svg { animation: none; } }
+
+/* Entrada de la portada. El texto
+   aparecía todo de golpe sobre la foto. Ahora entra en medio segundo, de arriba hacia abajo y con poca diferencia entre
+   una cosa y la otra, para que se lea como un solo gesto. Solo opacidad y posición, que las mueve la placa: no se traba
+   aunque la página esté ocupada. Con «backwards» la animación manda solo hasta terminar; después valen las reglas de
+   siempre (las que esconden la pista y la flecha, y la del despegue). */
+@keyframes lp-entra { from { opacity: 0; transform: translateY(14px); } }
+@keyframes lp-aparece { from { opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  .lp-barra, .lp-sombra { animation: lp-aparece .5s ease backwards; }
+  .lp-heroe > .lp-antetitulo, .lp-heroe > h1, .lp-heroe > .lp-bajada, .lp-heroe > .lp-acciones { animation: lp-entra .55s cubic-bezier(.2, .7, .2, 1) backwards; }
+  .lp-heroe > h1 { animation-delay: 50ms; }
+  .lp-heroe > .lp-bajada { animation-delay: 120ms; }
+  .lp-heroe > .lp-acciones { animation-delay: 190ms; }
+  .lp-bajar, .lp-pista { animation: lp-aparece .6s ease .65s backwards; }
+}
+
+/* secciones */
+.lp-seccion { min-height: 100vh; display: flex; align-items: center; padding: 100px clamp(16px, 6vw, 80px); }
+.lp-caja { width: 100%; max-width: 1120px; margin: 0 auto; padding: clamp(24px, 4vw, 48px); border-radius: 28px; background: var(--lp-caja);
+  border: 1px solid var(--lp-borde); backdrop-filter: blur(14px) saturate(1.2); -webkit-backdrop-filter: blur(14px) saturate(1.2);
+  box-shadow: 0 30px 80px rgba(5, 4, 15, .35); }
+.lp-caja.angosta { max-width: 760px; }
+.lp-etiqueta { margin: 0 0 10px; font-size: 13px; letter-spacing: .08em; text-transform: uppercase; color: var(--lp-trigo); font-weight: 600; }
+.lp-caja h2, .lp-final h2 { margin: 0; font-family: var(--lp-titulo); font-weight: 600; font-size: clamp(30px, 4.2vw, 52px); line-height: 1.05; letter-spacing: -.015em; }
+.lp-texto { max-width: 720px; margin: 18px 0 0; font-size: 17px; line-height: 1.6; color: var(--lp-tinta-2); }
+
+.lp-pasos { list-style: none; margin: 34px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+.lp-pasos li { padding: 22px; border-radius: 20px; background: rgba(255, 248, 236, .06); border: 1px solid var(--lp-borde); }
+.lp-num { display: inline-grid; place-items: center; width: 38px; height: 38px; border-radius: 50%; background: var(--lp-trigo); color: #2a1c06;
+  font-family: var(--lp-titulo); font-weight: 700; font-size: 18px; }
+.lp-pasos h3, .lp-datos h3 { margin: 14px 0 6px; font-size: 18px; font-weight: 650; }
+.lp-pasos p, .lp-datos p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--lp-tinta-2); }
+
+.lp-datos { list-style: none; margin: 30px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.lp-datos li { padding: 18px 20px; border-radius: 18px; background: rgba(255, 248, 236, .06); border: 1px solid var(--lp-borde);
+  transition: transform .2s ease, background .2s ease, border-color .2s ease; }
+.lp-datos li:hover { transform: translateY(-3px); background: rgba(255, 248, 236, .1); border-color: rgba(242, 200, 115, .45); }
+/* En trigo, como el resto de los acentos (eran lo único verde de la portada) */
+.lp-sigla { display: inline-block; padding: 3px 9px; border-radius: 6px; background: rgba(242, 200, 115, .14); color: var(--lp-trigo); font-size: 12px;
+  font-weight: 700; letter-spacing: .06em; }
+.lp-datos h3 { margin-top: 10px; }
+
+.lp-lista { margin: 22px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
+.lp-lista li { position: relative; padding-left: 28px; font-size: 16px; line-height: 1.55; color: var(--lp-tinta-2); }
+.lp-lista li::before { content: ""; position: absolute; left: 4px; top: .55em; width: 10px; height: 10px; border-radius: 50%; background: var(--lp-trigo); }
+
+/* Va en medio de la página, debajo de los ejemplos (antes cerraba la página con 90vh de alto) */
+.lp-final { min-height: 60vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: 80px 16px; }
+.lp-final h2 { font-size: clamp(38px, 6vw, 76px); text-shadow: 0 4px 40px rgba(10, 8, 30, .5); }
+.lp-final .lp-acciones { justify-content: center; }
+/* el cierre de la página, con los dos botones */
+.lp-cierre { min-height: 50vh; }
+
+.lp-pie { padding: 26px clamp(16px, 6vw, 80px) 34px; background: linear-gradient(180deg, rgba(12, 11, 26, 0), rgba(12, 11, 26, .85) 40%);
+  font-size: 13px; color: var(--lp-tinta-2); text-align: center; }
+.lp-pie p { margin: 4px 0; }
+
+@media (max-width: 900px) {
+  .lp-pasos, .lp-datos { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px) {
+  .lp-pasos, .lp-datos { grid-template-columns: 1fr; }
+  .lp-seccion { padding: 80px 16px; }
+  .lp-caja { border-radius: 22px; }
+  .lp-acciones .lp-btn { flex: 1 1 100%; }
+}
+
+/* al tocar un link a la herramienta: el texto se va y queda el trigo, que sigue en la bienvenida */
+.lp.despegando main, .lp.despegando .lp-barra { opacity: 0; transform: translateY(-22px); transition: opacity .5s ease, transform .6s cubic-bezier(.4, 0, .2, 1); pointer-events: none; }
+/* y de la portada a la herramienta (otra página) se pasa con un fundido del navegador, donde lo hay */
+@view-transition { navigation: auto; }
+::view-transition-old(root), ::view-transition-new(root) { animation-duration: 450ms; animation-timing-function: cubic-bezier(.4, 0, .2, 1); }
+
+/* tres terrenos de ejemplo en 3D, con «Ver solución» */
+.lp-terrenos { margin-top: 28px; }
+.lp-terrenos-grilla { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+.lp-terreno { display: flex; flex-direction: column; border-radius: 22px; overflow: hidden; background: rgba(255, 248, 236, .06);
+  border: 1px solid var(--lp-borde); transition: border-color .2s ease, transform .2s ease; }
+.lp-terreno:hover { border-color: rgba(242, 200, 115, .45); transform: translateY(-3px); }
+.lp-terreno-escenario { position: relative; aspect-ratio: 16 / 10; background: #dfe3e2; overflow: hidden; }
+/* El fondo gris claro de los videos se entinta de crema, para que no queden tres rectángulos fríos en
+   la página oscura. Si se vuelven a renderizar con otro fondo, esto se saca */
+.lp-terreno-escenario::after { content: ""; position: absolute; inset: 0; background: #fff2dc; mix-blend-mode: multiply; pointer-events: none; }
+.lp-terreno-escenario video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+.lp-terreno-escenario video + video { visibility: hidden; }
+.lp-terreno-escenario video.visible { visibility: visible; }
+.lp-terreno-texto { padding: 18px 20px 4px; flex: 1; }
+.lp-terreno-lugar { margin: 0; color: var(--lp-trigo); font-size: 13px; font-weight: 600; letter-spacing: .02em; }
+.lp-terreno-texto h3 { margin: 6px 0 0; font-family: var(--lp-titulo); font-weight: 600; font-size: 22px; line-height: 1.15; }
+.lp-terreno-texto p:last-child { margin: 8px 0 0; font-size: 15px; line-height: 1.5; color: var(--lp-tinta-2); }
+.lp-terreno-btn { margin: 14px 20px 20px; }
+.lp-terrenos-pie { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; }
+.lp-terrenos-nota { margin: 0; flex: 1 1 320px; font-size: 13px; color: var(--lp-tinta-2); }
+.lp-terrenos-pausa { min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid rgba(255, 248, 236, .45);
+  background: rgba(34, 19, 32, .45); color: var(--lp-tinta); font: 600 14px/1 var(--lp-fuente); cursor: pointer; }
+.lp-terrenos-pausa:hover { background: rgba(34, 19, 32, .72); }
+.lp-terrenos-pausa:focus-visible { outline: 3px solid #fff; outline-offset: 2px; }
+@media (max-width: 960px) { .lp-terrenos-grilla { grid-template-columns: 1fr; max-width: 560px; } }

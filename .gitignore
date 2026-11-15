@@ -1,0 +1,4 @@
+.vercel
+.env*
+.secretos/
+__pycache__/

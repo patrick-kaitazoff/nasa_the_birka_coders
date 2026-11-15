@@ -1,0 +1,47 @@
+/* Selector ES | EN: las dos siglas juntas con una barra tenue en el medio; la
+   elegida en blanco, más gruesa y subrayada en verde menta. Lo usan la herramienta y las dos portadas: va en un
+   solo lugar para que no se vuelvan a separar. Pensado para fondo oscuro (barra de la herramienta, foto del trigo). */
+.selector-idioma {
+  display: inline-flex;
+  align-items: center;
+  gap: 1px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  user-select: none;
+  background: none;
+  border: 0;
+  padding: 0;
+}
+.selector-idioma .separador-idioma {
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 1;
+  padding: 0 3px;
+  user-select: none;
+}
+.selector-idioma .opcion-idioma {
+  background: transparent;
+  border: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 2px 4px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: color 0.15s ease;
+  line-height: 1.2;
+}
+.selector-idioma .opcion-idioma:hover {
+  color: #ffffff;
+}
+.selector-idioma .opcion-idioma.activa {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  text-decoration: underline;
+  text-decoration-color: #82e0aa;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}

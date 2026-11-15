@@ -1,0 +1,56 @@
+{
+  "fuente": "NASA ECOSTRESS (ISS)",
+  "sensor": "ECOsystem Spaceborne Thermal Radiometer Experiment on Space Station",
+  "resolucion_espacial": "70 metros",
+  "plataforma": "Estación Espacial Internacional (órbita no heliosincrónica, inclinación 51,6°)",
+  "diagnostico_campo": {
+    "ubicacion": [-33.1, -56.15],
+    "periodo_evaluado": "2024-11 a 2026-11 (últimos 2 años)",
+    "pasadas_totales_orbita": 181,
+    "pasadas_con_dato_valido": 52,
+    "pasadas_con_nube_o_corte": 129,
+    "porcentaje_util": 28.7,
+    "cobertura_temporal": "Irregular (la órbita de la ISS cambia la hora de pasada; muchas caen de noche o de madrugada)"
+  },
+  "fechas_clave_ejemplo": [
+    {
+      "fecha": "2023-01-10",
+      "hora_local": "17:23",
+      "evento": "Seca de 2022/23, en plena ola de calor",
+      "temperatura_media_c": 41.4,
+      "temperatura_min_c": 34.1,
+      "temperatura_max_c": 46.7,
+      "rango_intralote_c": 12.6,
+      "desvio_estandar_c": 1.27,
+      "interpretacion": "Entre el lugar más fresco y el más caliente del campo hubo 12,6 °C a la misma hora (34,1 °C contra 46,7 °C)."
+    },
+    {
+      "fecha": "2025-01-07",
+      "hora_local": "16:54",
+      "evento": "Verano de 2025, un año normal",
+      "temperatura_media_c": 31.4,
+      "temperatura_min_c": 26.2,
+      "temperatura_max_c": 36.1,
+      "rango_intralote_c": 9.9,
+      "desvio_estandar_c": 1.78,
+      "interpretacion": "Casi 10 °C de diferencia dentro del campo en un verano sin seca."
+    },
+    {
+      "fecha": "2025-02-24",
+      "hora_local": "14:04",
+      "evento": "Fin del verano de 2025, a la hora de más sol",
+      "temperatura_media_c": 41.0,
+      "temperatura_min_c": 35.8,
+      "temperatura_max_c": 44.5,
+      "rango_intralote_c": 8.7,
+      "desvio_estandar_c": 1.45,
+      "interpretacion": "Todo el campo arriba de 35 °C, con 8,7 °C entre el lugar más fresco y el más caliente."
+    }
+  ],
+  "conclusion": "Con 70 m, ECOSTRESS ve diferencias de temperatura adentro del potrero en un día puntual. No sirve para seguir el campo día a día: la hora de pasada cambia y las nubes tapan la mayoría de las pasadas.",
+  "estado_productos": {
+    "ALEXI_disALEXI": "Solo cubre Estados Unidos continental; no cubre Uruguay.",
+    "ECO_L4T_ESI": "Índice de estrés PT-JPL a 70 m que cubre Uruguay, por LP DAAC / AppEEARS; no está en el catálogo de Earth Engine.",
+    "ECO_L2T_LSTE": "Temperatura y emisividad a 70 m en Earth Engine (colección NASA/ECOSTRESS/L2T_LSTE/V2)."
+  }
+}

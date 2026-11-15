@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="es-UY">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- fundido entre la portada y la herramienta: la regla va acá, antes que todo, para que la página nueva
+         ya esté anotada cuando el navegador la muestra (si dependía del CSS, a veces llegaba tarde) -->
+    <style>@view-transition { navigation: auto; }</style>
+    <!-- avisa cuando terminó el fundido desde la portada (lo usa inicio/llegada.ts para dibujar el ejemplo recién ahí).
+         Tiene que escucharse acá: el aviso «pagereveal» sale antes de la primera pintura y, desde que esta página se
+         pinta sin esperar a su código, el código llegaba tarde, no lo oía nunca y el ejemplo esperaba
+         siempre el tope de 2,5 s con la pantalla de carga puesta. -->
+    <script>window.__fsFundido=new Promise(function(ok){if(!("onpagereveal" in window))return ok();addEventListener("pagereveal",function(e){var v=e.viewTransition;if(v)v.finished.then(ok,ok);else ok()},{once:true})});</script>
+    <meta name="theme-color" content="#3A3D25" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Asesor de rotaciones para tu campo, con datos de la NASA y del MGAP." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- las letras van en el proyecto: antes venían de Google Fonts, con una hoja de estilos que frenaba
+         la primera pintura y dos servidores más a los que conectarse. Son los mismos archivos de Google Fonts (parte
+         «latin», con todos los pesos adentro; licencia OFL). Fraunces es el mismo archivo de la portada. -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/src/fuentes/geist-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/src/fuentes/geist-mono-latin.woff2" />
+    <style>
+      @font-face { font-family: "Geist"; font-style: normal; font-weight: 300 700; font-display: swap;
+        src: url("/src/fuentes/geist-latin.woff2") format("woff2"); }
+      @font-face { font-family: "Geist Mono"; font-style: normal; font-weight: 400 500; font-display: swap;
+        src: url("/src/fuentes/geist-mono-latin.woff2") format("woff2"); }
+      @font-face { font-family: "Space Grotesk"; font-style: normal; font-weight: 400 500; font-display: swap;
+        src: url("/src/fuentes/space-grotesk-latin.woff2") format("woff2"); }
+      @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500 700; font-display: swap;
+        src: url("/src/landing/fuentes/fraunces-latin.woff2") format("woff2"); }
+    </style>
+    <style>
+      html, body { margin: 0; height: 100%; background: #f2f0e1; }
+      #root { height: 100%; }
+      .esqueleto { display: grid; grid-template-rows: 58px 1fr; height: 100%; }
+      .esq-barra { background: #3a3d25; }
+      .esq-cuerpo { display: grid; grid-template-columns: minmax(0, 1fr) minmax(360px, 430px); min-height: 0; }
+      .esq-mapa { background: #2b3122; }
+      .esq-chat { background: #fbfaf2; border-left: 1px solid rgba(27, 28, 20, 0.11); }
+      @media (max-width: 960px) { .esq-cuerpo { grid-template-columns: 1fr; } .esq-chat { display: none; } }
+      .esq-ejemplo .esqueleto { background: #231d2c; }
+      .esq-ejemplo .esq-barra, .esq-ejemplo .esq-cuerpo { display: none; }
+    </style>
+    <script>if (/[?&]demo(=|&|$)/.test(location.search)) document.documentElement.classList.add("esq-ejemplo");</script>
+    <title>Seasons Ahead — planificá tu campo con datos</title>
+  </head>
+  <body>
+    <!-- El esqueleto de la herramienta (barra, mapa y chat) se pinta al instante, antes que el código: el
+         fundido desde la portada termina acá en vez de quedarse con el trigo quieto (o en blanco) mientras baja el
+         código, y después el mapa y el chat se llenan en su lugar. Con ?demo, el fondo oscuro de «Abriendo el campo de
+         ejemplo». React reemplaza todo esto al arrancar. -->
+    <div id="root"><div class="esqueleto" aria-hidden="true"><div class="esq-barra"></div><div class="esq-cuerpo"><div class="esq-mapa"></div><div class="esq-chat"></div></div></div></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

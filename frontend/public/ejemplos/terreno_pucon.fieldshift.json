@@ -1,0 +1,5568 @@
+{
+  "version": 1,
+  "campo": {
+    "id": "ejemplo-pucon",
+    "nombre": "Fundo Los Robles (ejemplo)",
+    "ubicacion": {
+      "lat": -39.31,
+      "lon": -71.94999999999999,
+      "lugar": "Pucón, Araucanía · Chile",
+      "origen": "ejemplo"
+    },
+    "contorno": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -71.956235,
+            -39.315388
+          ],
+          [
+            -71.941472,
+            -39.31296
+          ],
+          [
+            -71.943765,
+            -39.304612
+          ],
+          [
+            -71.958528,
+            -39.30704
+          ],
+          [
+            -71.956235,
+            -39.315388
+          ]
+        ]
+      ]
+    },
+    "area_ha": 122.6,
+    "secciones": [
+      {
+        "id": "s1",
+        "nombre": "El Volcán",
+        "geometria": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.956235,
+                -39.315388
+              ],
+              [
+                -71.951314,
+                -39.314578
+              ],
+              [
+                -71.953607,
+                -39.306231
+              ],
+              [
+                -71.958528,
+                -39.30704
+              ],
+              [
+                -71.956235,
+                -39.315388
+              ]
+            ]
+          ]
+        },
+        "area_ha": 40.9,
+        "historial": [
+          {
+            "anio": 2022,
+            "invierno": "pradera",
+            "verano": "pradera"
+          },
+          {
+            "anio": 2023,
+            "invierno": "pradera",
+            "verano": "pradera"
+          },
+          {
+            "anio": 2024,
+            "invierno": "pradera",
+            "verano": "pradera"
+          },
+          {
+            "anio": 2025,
+            "invierno": "pradera",
+            "verano": "pradera"
+          }
+        ],
+        "problemas": []
+      },
+      {
+        "id": "s2",
+        "nombre": "La Vega",
+        "geometria": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.951314,
+                -39.314578
+              ],
+              [
+                -71.946393,
+                -39.313769
+              ],
+              [
+                -71.948686,
+                -39.305422
+              ],
+              [
+                -71.953607,
+                -39.306231
+              ],
+              [
+                -71.951314,
+                -39.314578
+              ]
+            ]
+          ]
+        },
+        "area_ha": 40.9,
+        "historial": [
+          {
+            "anio": 2022,
+            "invierno": "trigo",
+            "verano": "barbecho"
+          },
+          {
+            "anio": 2023,
+            "invierno": "verdeo",
+            "verano": "maiz"
+          },
+          {
+            "anio": 2024,
+            "invierno": "trigo",
+            "verano": "barbecho"
+          },
+          {
+            "anio": 2025,
+            "invierno": "verdeo",
+            "verano": "maiz"
+          }
+        ],
+        "problemas": [
+          "anegamiento"
+        ]
+      },
+      {
+        "id": "s3",
+        "nombre": "El Lago",
+        "geometria": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                -71.946393,
+                -39.313769
+              ],
+              [
+                -71.941472,
+                -39.31296
+              ],
+              [
+                -71.943765,
+                -39.304612
+              ],
+              [
+                -71.948686,
+                -39.305422
+              ],
+              [
+                -71.946393,
+                -39.313769
+              ]
+            ]
+          ]
+        },
+        "area_ha": 40.9,
+        "historial": [
+          {
+            "anio": 2022,
+            "invierno": "colza",
+            "verano": "barbecho"
+          },
+          {
+            "anio": 2023,
+            "invierno": "trigo",
+            "verano": "barbecho"
+          },
+          {
+            "anio": 2024,
+            "invierno": "colza",
+            "verano": "barbecho"
+          },
+          {
+            "anio": 2025,
+            "invierno": "trigo",
+            "verano": "barbecho"
+          }
+        ],
+        "problemas": [
+          "helada"
+        ]
+      }
+    ],
+    "sistema": {
+      "tipo": "mixto",
+      "ganado": true,
+      "cabezas": 140,
+      "tenencia": "propio",
+      "riego": false
+    },
+    "experiencia": {
+      "anios": 22,
+      "que_funciono": "la pradera para las vacas de leche",
+      "que_fallo": "el maíz se hiela temprano algunos años",
+      "texto": "lechería con pradera; el maíz a veces se hiela"
+    },
+    "objetivos": {
+      "corto_plazo": "asegurar el forraje del invierno",
+      "largo_plazo": "seguir con la lechería sin gastar el suelo",
+      "pct_agricola": 40,
+      "prioridades": {
+        "ingreso": 3,
+        "suelo": 4,
+        "agua": 2,
+        "clima": 3,
+        "forraje": 5,
+        "simplicidad": 2,
+        "diversificacion": 2
+      }
+    },
+    "pasos_omitidos": [
+      "subir_analisis_suelo",
+      "margenes"
+    ],
+    "restricciones": {
+      "cultivos_excluidos": [
+        "soja",
+        "soja2",
+        "girasol",
+        "sorgo"
+      ]
+    },
+    "factor_r_medido": {
+      "r": 453.7,
+      "r_mj_mm_ha_h": 4537,
+      "fuente": "GloREDa 1.2, JRC"
+    }
+  },
+  "mensajes": [
+    {
+      "id": "d1",
+      "rol": "asesor",
+      "texto": "Este es un campo de ejemplo en Pucón (Chile), entre el volcán Villarrica y el lago. El clima, el relieve, el verdor del satélite y el suelo (mapa mundial SoilGrids) son reales; el productor y sus respuestas son inventados para mostrar cómo funciona fuera de Uruguay. Tocá un lote para ver las opciones, con su porqué."
+    },
+    {
+      "id": "d2",
+      "rol": "asesor",
+      "texto": "Listo. Analicé 3 secciones con 35 años de clima diario de la NASA (1991-2025), el suelo del mapa mundial SoilGrids y lo que vio el satélite MODIS desde 2022.\n\nEl clima de tu zona se está corriendo: la lluvia del año pasó de 2384 a 1763 mm entre 1991-2008 y 2009-2025. Los días de más de 35 °C en verano pasaron de 0,0 a 0,8 por año.\n\nCon la ecuación del Plan de Uso, la erosión media del campo con lo que hacés hoy es 56,1 t/ha/año; si tomás la sugerida en cada sección, 13,1.\n\nCon lo que aguanta el suelo de cada lote, las sugeridas llegan a 0 % agrícola y no al 40 % que marcaste: más agricultura se pasaría de la tolerancia en algún lote.\n\nEl Volcán (41 ha): con tus prioridades, la opción que mejor sale es campo natural con manejo del pastoreo en vez de lo actual (erosión 21,7 → 14,5 t/ha/año; tolerancia (lo máximo que ese suelo puede perder por año sin degradarse): 7).\n\nLa Vega (41 ha): con tus prioridades, la opción que mejor sale es campo natural con manejo del pastoreo en vez de lo actual (erosión 89,3 → 12,7 t/ha/año; tolerancia: 7).\n\nEl Lago (41 ha): con tus prioridades, la opción que mejor sale es campo natural con manejo del pastoreo en vez de lo actual (erosión 57,2 → 12,2 t/ha/año; tolerancia: 7).\n\nEl plan arranca en la opción sugerida de cada sección. Tocá una sección para ver las alternativas, cada una con el porqué, la evidencia, los beneficios, lo que falta saber y los riesgos, y elegí vos qué probar. Es un apoyo para decidir: revisalo con tu agrónomo."
+    }
+  ],
+  "historialApi": [],
+  "analisis": {
+    "generado": "2026-11-15T08:29:01",
+    "centro": {
+      "lat": -39.31,
+      "lon": -71.94999999999999
+    },
+    "cronometro_s": {
+      "total": 0.93,
+      "nasa_power": 0.18,
+      "clima": 0.25,
+      "mgap_factor_r": 0.0,
+      "secciones_total": 0.93,
+      "armado_plan": 0.0,
+      "detalle_secciones": {
+        "s2": {
+          "suelo": 0.01,
+          "ndvi": 0.03,
+          "hls": 0.03,
+          "rotaciones": 0.4,
+          "total": 0.47
+        },
+        "s1": {
+          "suelo": 0.01,
+          "ndvi": 0.03,
+          "hls": 0.02,
+          "rotaciones": 0.02,
+          "total": 0.09
+        },
+        "s3": {
+          "suelo": 0.03,
+          "ndvi": 0.03,
+          "hls": 0.02,
+          "rotaciones": 0.04,
+          "total": 0.12
+        }
+      }
+    },
+    "clima": {
+      "dias": 13096,
+      "dias_completados": 1,
+      "aviso_completados": "1 de 13.096 días no tenían algún dato de la NASA y se completaron con el promedio de ese mismo día en los otros años.",
+      "lluvia_dudosa": [],
+      "avisos_lluvia": [],
+      "fuente": "NASA POWER (daily, community AG)",
+      "url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CALLSKY_SFC_SW_DWN%2CRH2M%2CWS2M%2CGWETROOT&community=AG&latitude=-39.25&longitude=-72.0&start=19910101&end=20261108&format=JSON",
+      "celda": {
+        "lat": -39.25,
+        "lon": -72.0,
+        "resolucion": "≈0,5° (~50 km)"
+      },
+      "periodo": "1991-2025",
+      "fuente_lluvia": "GPM IMERG",
+      "lluvia": {
+        "fuente": "NASA GPM IMERG (diario, V07: Final hasta 9/2025, Late después)",
+        "celda": [
+          -39.35,
+          -71.95
+        ],
+        "desde": "20000601",
+        "dias_imerg": 9657,
+        "dias_power": 3439,
+        "power_ajustada": {
+          "dias": 3439,
+          "metodo": "cuantiles mes a mes: cada día de POWER sin IMERG toma el valor de IMERG que ocupa el mismo lugar en la distribución de ese mes, aprendida en los años que tienen las dos (método de mapeo de cuantiles)"
+        }
+      },
+      "agua_util_mm": 120.0,
+      "elevacion_m": 795.13,
+      "mensual": [
+        {
+          "mes": "ene",
+          "lluvia_mm": 46.9,
+          "et0_mm": 147.1,
+          "balance_mm": -100.2,
+          "tmax": 22.2,
+          "tmin": 8.5,
+          "dias_helada": 0.1,
+          "dias_lluvia_fuerte": 0.09,
+          "humedad_raices": 0.504
+        },
+        {
+          "mes": "feb",
+          "lluvia_mm": 56.5,
+          "et0_mm": 120.9,
+          "balance_mm": -64.5,
+          "tmax": 22.7,
+          "tmin": 8.7,
+          "dias_helada": 0.0,
+          "dias_lluvia_fuerte": 0.11,
+          "humedad_raices": 0.463
+        },
+        {
+          "mes": "mar",
+          "lluvia_mm": 89.1,
+          "et0_mm": 93.9,
+          "balance_mm": -4.8,
+          "tmax": 20.3,
+          "tmin": 7.3,
+          "dias_helada": 0.1,
+          "dias_lluvia_fuerte": 0.2,
+          "humedad_raices": 0.448
+        },
+        {
+          "mes": "abr",
+          "lluvia_mm": 172.5,
+          "et0_mm": 50.2,
+          "balance_mm": 122.4,
+          "tmax": 15.3,
+          "tmin": 4.9,
+          "dias_helada": 1.4,
+          "dias_lluvia_fuerte": 1.14,
+          "humedad_raices": 0.464
+        },
+        {
+          "mes": "may",
+          "lluvia_mm": 300.0,
+          "et0_mm": 27.7,
+          "balance_mm": 272.3,
+          "tmax": 11.4,
+          "tmin": 3.2,
+          "dias_helada": 4.7,
+          "dias_lluvia_fuerte": 2.23,
+          "humedad_raices": 0.506
+        },
+        {
+          "mes": "jun",
+          "lluvia_mm": 370.8,
+          "et0_mm": 15.5,
+          "balance_mm": 355.2,
+          "tmax": 7.9,
+          "tmin": 1.5,
+          "dias_helada": 8.0,
+          "dias_lluvia_fuerte": 2.94,
+          "humedad_raices": 0.578
+        },
+        {
+          "mes": "jul",
+          "lluvia_mm": 290.4,
+          "et0_mm": 18.3,
+          "balance_mm": 272.1,
+          "tmax": 7.4,
+          "tmin": 0.4,
+          "dias_helada": 12.8,
+          "dias_lluvia_fuerte": 2.03,
+          "humedad_raices": 0.631
+        },
+        {
+          "mes": "ago",
+          "lluvia_mm": 255.6,
+          "et0_mm": 29.6,
+          "balance_mm": 226.0,
+          "tmax": 8.9,
+          "tmin": 0.9,
+          "dias_helada": 11.4,
+          "dias_lluvia_fuerte": 1.86,
+          "humedad_raices": 0.665
+        },
+        {
+          "mes": "sep",
+          "lluvia_mm": 179.7,
+          "et0_mm": 49.4,
+          "balance_mm": 130.3,
+          "tmax": 11.5,
+          "tmin": 1.8,
+          "dias_helada": 7.7,
+          "dias_lluvia_fuerte": 1.03,
+          "humedad_raices": 0.678
+        },
+        {
+          "mes": "oct",
+          "lluvia_mm": 134.8,
+          "et0_mm": 77.3,
+          "balance_mm": 57.6,
+          "tmax": 14.1,
+          "tmin": 3.3,
+          "dias_helada": 3.7,
+          "dias_lluvia_fuerte": 0.49,
+          "humedad_raices": 0.659
+        },
+        {
+          "mes": "nov",
+          "lluvia_mm": 105.2,
+          "et0_mm": 102.2,
+          "balance_mm": 2.9,
+          "tmax": 16.6,
+          "tmin": 5.2,
+          "dias_helada": 1.0,
+          "dias_lluvia_fuerte": 0.37,
+          "humedad_raices": 0.616
+        },
+        {
+          "mes": "dic",
+          "lluvia_mm": 81.0,
+          "et0_mm": 132.9,
+          "balance_mm": -51.9,
+          "tmax": 19.6,
+          "tmin": 7.1,
+          "dias_helada": 0.1,
+          "dias_lluvia_fuerte": 0.26,
+          "humedad_raices": 0.558
+        }
+      ],
+      "erosividad": {
+        "lluvia_anual_mm": 2083,
+        "r_anual": 15852,
+        "unidad_r": "MJ·mm/(ha·h·año)",
+        "reparto_mensual": [
+          0.0078,
+          0.0153,
+          0.025,
+          0.0916,
+          0.1766,
+          0.2177,
+          0.1751,
+          0.1259,
+          0.0675,
+          0.0414,
+          0.0341,
+          0.0221
+        ],
+        "meses_pico": [
+          "jun",
+          "may",
+          "jul"
+        ],
+        "metodo": "Reparto: P^1,81 de días ≥ 12,7 mm (GPM IMERG). R: Renard y Freimund 1994."
+      },
+      "tormentas": {
+        "umbral_mm": 50.0,
+        "umbral_grande_mm": 100.0,
+        "por_anio": 7.0,
+        "por_mes": [
+          0.08,
+          0.04,
+          0.08,
+          0.52,
+          1.2,
+          1.48,
+          1.24,
+          1.0,
+          0.6,
+          0.48,
+          0.24,
+          0.08
+        ],
+        "meses_pico": [
+          "jun",
+          "jul",
+          "may"
+        ],
+        "anios_sin": 0,
+        "anio_mas": {
+          "anio": 2006,
+          "cuantas": 12
+        },
+        "grandes": 19,
+        "cada_anios_grande": 1.3,
+        "maxima": {
+          "mm": 155,
+          "fecha": "2009-05-20"
+        },
+        "periodo": "2001-2025",
+        "anios": 25,
+        "fuente": "GPM IMERG"
+      },
+      "riesgos_cultivo": {
+        "soja": {
+          "cultivo": "soja",
+          "anios_evaluados": 35,
+          "prob_seca": 0.743,
+          "deficit_medio": 0.618,
+          "perdida_media": 0.349,
+          "perdida_anio_seco": 0.452,
+          "caida_anio_seco": 0.177,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": 0.029,
+          "ventana_agua": "floración y llenado (R3-R6): 24 ene a 5 mar",
+          "ventana_helada": null,
+          "ventana_calor": "floración: 9 ene a 18 feb",
+          "cuentas": {
+            "prob_seca": [
+              26,
+              35
+            ],
+            "prob_calor": [
+              1,
+              35
+            ]
+          }
+        },
+        "soja2": {
+          "cultivo": "soja2",
+          "anios_evaluados": 35,
+          "prob_seca": 0.543,
+          "deficit_medio": 0.53,
+          "perdida_media": 0.304,
+          "perdida_anio_seco": 0.432,
+          "caida_anio_seco": 0.183,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": 0.0,
+          "ventana_agua": "floración y llenado (R3-R6): 8 feb a 15 mar",
+          "ventana_helada": null,
+          "ventana_calor": "floración: 24 ene a 28 feb",
+          "cuentas": {
+            "prob_seca": [
+              19,
+              35
+            ],
+            "prob_calor": [
+              0,
+              35
+            ]
+          }
+        },
+        "maiz": {
+          "cultivo": "maiz",
+          "anios_evaluados": 35,
+          "prob_seca": 0.2,
+          "deficit_medio": 0.261,
+          "perdida_media": 0.487,
+          "perdida_anio_seco": 0.678,
+          "caida_anio_seco": 0.36,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": 0.0,
+          "ventana_agua": "floración (panojamiento-cuaje): 30 nov a 4 ene",
+          "ventana_helada": null,
+          "ventana_calor": "floración: 30 nov a 4 ene",
+          "cuentas": {
+            "prob_seca": [
+              7,
+              35
+            ],
+            "prob_calor": [
+              0,
+              35
+            ]
+          }
+        },
+        "maiz2": {
+          "cultivo": "maiz2",
+          "anios_evaluados": 35,
+          "prob_seca": 0.429,
+          "deficit_medio": 0.476,
+          "perdida_media": 0.383,
+          "perdida_anio_seco": 0.594,
+          "caida_anio_seco": 0.345,
+          "prob_helada": 0.514,
+          "prob_helada_agro": 0.829,
+          "prob_calor": null,
+          "ventana_agua": "floración: 8 feb a 10 mar",
+          "ventana_helada": "llenado final: 25 mar a 19 abr",
+          "ventana_calor": null,
+          "cuentas": {
+            "prob_seca": [
+              15,
+              35
+            ],
+            "prob_helada": [
+              18,
+              35
+            ],
+            "prob_helada_agro": [
+              29,
+              35
+            ]
+          }
+        },
+        "sorgo": {
+          "cultivo": "sorgo",
+          "anios_evaluados": 35,
+          "prob_seca": 0.486,
+          "deficit_medio": 0.487,
+          "perdida_media": 0.302,
+          "perdida_anio_seco": 0.419,
+          "caida_anio_seco": 0.176,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": 0.0,
+          "ventana_agua": "floración: 14 ene a 13 feb",
+          "ventana_helada": null,
+          "ventana_calor": "floración: 14 ene a 13 feb",
+          "cuentas": {
+            "prob_seca": [
+              17,
+              35
+            ],
+            "prob_calor": [
+              0,
+              35
+            ]
+          }
+        },
+        "girasol": {
+          "cultivo": "girasol",
+          "anios_evaluados": 35,
+          "prob_seca": 0.029,
+          "deficit_medio": 0.194,
+          "perdida_media": 0.246,
+          "perdida_anio_seco": 0.406,
+          "caida_anio_seco": 0.195,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": 0.0,
+          "ventana_agua": "floración: 30 nov a 30 dic",
+          "ventana_helada": null,
+          "ventana_calor": "floración: 30 nov a 30 dic",
+          "cuentas": {
+            "prob_seca": [
+              1,
+              35
+            ],
+            "prob_calor": [
+              0,
+              35
+            ]
+          }
+        },
+        "trigo": {
+          "cultivo": "trigo",
+          "anios_evaluados": 35,
+          "prob_seca": 0.0,
+          "deficit_medio": 0.003,
+          "perdida_media": 0.012,
+          "perdida_anio_seco": 0.019,
+          "caida_anio_seco": 0.019,
+          "prob_helada": 0.943,
+          "prob_helada_agro": 1.0,
+          "prob_calor": 0.0,
+          "ventana_agua": "espigazón y floración: 28 sep a 28 oct",
+          "ventana_helada": "espigazón y floración: 28 sep a 23 oct",
+          "ventana_calor": "llenado de grano: 23 oct a 17 nov",
+          "cuentas": {
+            "prob_seca": [
+              0,
+              35
+            ],
+            "prob_helada": [
+              33,
+              35
+            ],
+            "prob_helada_agro": [
+              35,
+              35
+            ],
+            "prob_calor": [
+              0,
+              35
+            ]
+          }
+        },
+        "cebada": {
+          "cultivo": "cebada",
+          "anios_evaluados": 35,
+          "prob_seca": 0.0,
+          "deficit_medio": 0.0,
+          "perdida_media": 0.007,
+          "perdida_anio_seco": 0.004,
+          "caida_anio_seco": 0.004,
+          "prob_helada": 0.971,
+          "prob_helada_agro": 1.0,
+          "prob_calor": 0.0,
+          "ventana_agua": "espigazón y floración: 23 sep a 23 oct",
+          "ventana_helada": "espigazón y floración: 23 sep a 23 oct",
+          "ventana_calor": "llenado de grano: 23 oct a 17 nov",
+          "cuentas": {
+            "prob_seca": [
+              0,
+              35
+            ],
+            "prob_helada": [
+              34,
+              35
+            ],
+            "prob_helada_agro": [
+              35,
+              35
+            ],
+            "prob_calor": [
+              0,
+              35
+            ]
+          }
+        },
+        "colza": {
+          "cultivo": "colza",
+          "anios_evaluados": 36,
+          "prob_seca": 0.0,
+          "deficit_medio": 0.0,
+          "perdida_media": 0.0,
+          "perdida_anio_seco": 0.0,
+          "caida_anio_seco": 0.0,
+          "prob_helada": 1.0,
+          "prob_helada_agro": 1.0,
+          "prob_calor": null,
+          "ventana_agua": "floración y formación de silicuas: 30 jul a 8 sep",
+          "ventana_helada": "floración: 30 jul a 3 sep",
+          "ventana_calor": null,
+          "cuentas": {
+            "prob_seca": [
+              0,
+              36
+            ],
+            "prob_helada": [
+              36,
+              36
+            ],
+            "prob_helada_agro": [
+              36,
+              36
+            ]
+          }
+        },
+        "cobertura": {
+          "cultivo": "cobertura",
+          "anios_evaluados": 36,
+          "prob_seca": null,
+          "deficit_medio": null,
+          "perdida_media": null,
+          "perdida_anio_seco": null,
+          "caida_anio_seco": null,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": null,
+          "ventana_agua": null,
+          "ventana_helada": null,
+          "ventana_calor": null,
+          "cuentas": {}
+        },
+        "verdeo": {
+          "cultivo": "verdeo",
+          "anios_evaluados": 36,
+          "prob_seca": null,
+          "deficit_medio": null,
+          "perdida_media": null,
+          "perdida_anio_seco": null,
+          "caida_anio_seco": null,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": null,
+          "ventana_agua": null,
+          "ventana_helada": null,
+          "ventana_calor": null,
+          "cuentas": {}
+        },
+        "sorgo_forrajero": {
+          "cultivo": "sorgo_forrajero",
+          "anios_evaluados": 35,
+          "prob_seca": 0.2,
+          "deficit_medio": 0.308,
+          "perdida_media": 0.288,
+          "perdida_anio_seco": 0.402,
+          "caida_anio_seco": 0.179,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": null,
+          "ventana_agua": "crecimiento activo: 11 dic a 30 ene",
+          "ventana_helada": null,
+          "ventana_calor": null,
+          "cuentas": {
+            "prob_seca": [
+              7,
+              35
+            ]
+          }
+        },
+        "pradera": {
+          "cultivo": "pradera",
+          "anios_evaluados": 35,
+          "prob_seca": 0.429,
+          "deficit_medio": 0.449,
+          "perdida_media": null,
+          "perdida_anio_seco": null,
+          "caida_anio_seco": null,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": null,
+          "ventana_agua": "rebrote de primavera-verano: 11 dic a 11 mar",
+          "ventana_helada": null,
+          "ventana_calor": null,
+          "cuentas": {
+            "prob_seca": [
+              15,
+              35
+            ]
+          }
+        },
+        "alfalfa": {
+          "cultivo": "alfalfa",
+          "anios_evaluados": 35,
+          "prob_seca": 0.429,
+          "deficit_medio": 0.424,
+          "perdida_media": null,
+          "perdida_anio_seco": null,
+          "caida_anio_seco": null,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": null,
+          "ventana_agua": "cortes de verano: 27 nov a 25 feb",
+          "ventana_helada": null,
+          "ventana_calor": null,
+          "cuentas": {
+            "prob_seca": [
+              15,
+              35
+            ]
+          }
+        },
+        "campo_natural": {
+          "cultivo": "campo_natural",
+          "anios_evaluados": 35,
+          "prob_seca": 0.286,
+          "deficit_medio": 0.352,
+          "perdida_media": null,
+          "perdida_anio_seco": null,
+          "caida_anio_seco": null,
+          "prob_helada": null,
+          "prob_helada_agro": null,
+          "prob_calor": null,
+          "ventana_agua": "crecimiento de verano: 11 dic a 11 mar",
+          "ventana_helada": null,
+          "ventana_calor": null,
+          "cuentas": {
+            "prob_seca": [
+              10,
+              35
+            ]
+          }
+        }
+      },
+      "clima_futuro": null,
+      "tendencia": {
+        "periodo_antes": "1991-2008",
+        "periodo_ahora": "2009-2025",
+        "lluvia_anual": {
+          "antes": 2384,
+          "ahora": 1763
+        },
+        "dias_calor_verano": {
+          "antes": 0.0,
+          "ahora": 0.8
+        },
+        "ultima_helada": {
+          "antes": "15 nov",
+          "ahora": "15 nov",
+          "corrimiento_dias": 4
+        },
+        "primera_helada": {
+          "antes": "12 abr",
+          "ahora": "14 abr",
+          "corrimiento_dias": 3
+        },
+        "dias_helada_anio": {
+          "antes": 51.2,
+          "ahora": 50.6
+        },
+        "cultivos": {
+          "soja": {
+            "prob_seca": {
+              "antes": 0.722,
+              "ahora": 0.765,
+              "k_antes": 13,
+              "n_antes": 18,
+              "k_ahora": 13,
+              "n_ahora": 17,
+              "cambio_claro": false
+            },
+            "prob_calor": {
+              "antes": 0.0,
+              "ahora": 0.059,
+              "k_antes": 0,
+              "n_antes": 18,
+              "k_ahora": 1,
+              "n_ahora": 17,
+              "cambio_claro": false
+            }
+          },
+          "maiz": {
+            "prob_seca": {
+              "antes": 0.056,
+              "ahora": 0.353,
+              "k_antes": 1,
+              "n_antes": 18,
+              "k_ahora": 6,
+              "n_ahora": 17,
+              "cambio_claro": true
+            },
+            "prob_calor": {
+              "antes": 0.0,
+              "ahora": 0.0,
+              "k_antes": 0,
+              "n_antes": 18,
+              "k_ahora": 0,
+              "n_ahora": 17,
+              "cambio_claro": false
+            }
+          },
+          "trigo": {
+            "prob_seca": {
+              "antes": 0.0,
+              "ahora": 0.0,
+              "k_antes": 0,
+              "n_antes": 18,
+              "k_ahora": 0,
+              "n_ahora": 17,
+              "cambio_claro": false
+            },
+            "prob_helada_agro": {
+              "antes": 1.0,
+              "ahora": 1.0,
+              "k_antes": 18,
+              "n_antes": 18,
+              "k_ahora": 17,
+              "n_ahora": 17,
+              "cambio_claro": false
+            },
+            "prob_calor": {
+              "antes": 0.0,
+              "ahora": 0.0,
+              "k_antes": 0,
+              "n_antes": 18,
+              "k_ahora": 0,
+              "n_ahora": 17,
+              "cambio_claro": false
+            }
+          },
+          "soja2": {
+            "prob_seca": {
+              "antes": 0.444,
+              "ahora": 0.647,
+              "k_antes": 8,
+              "n_antes": 18,
+              "k_ahora": 11,
+              "n_ahora": 17,
+              "cambio_claro": true
+            },
+            "prob_calor": {
+              "antes": 0.0,
+              "ahora": 0.0,
+              "k_antes": 0,
+              "n_antes": 18,
+              "k_ahora": 0,
+              "n_ahora": 17,
+              "cambio_claro": false
+            }
+          }
+        }
+      },
+      "zafra_actual": {
+        "hasta": "2026-11-15",
+        "lluvia_90d_mm": 1482,
+        "lluvia_90d_normal_mm": 526,
+        "anomalia_pct": 182,
+        "humedad_raices_ahora": 0.911,
+        "humedad_raices_normal": 0.618
+      },
+      "limites": [
+        "NASA POWER da el clima promedio de una zona de unos 50 km: no distingue bajos, lomas ni microclimas.",
+        "La helada se mide en el aire a 2 m; en bajos y a nivel del pasto suele ser 2-4 °C más fría.",
+        "El viento de NASA POWER en esta zona viene roto (casi cero): se usó 2 m/s, como indica la FAO.",
+        "Las lluvias extremas se suavizan al promediar toda esa zona: la erosividad real puede ser mayor.",
+        "El balance de agua usa un perfil de suelo con agua útil fija; con el análisis de suelo se ajusta.",
+        "1 de 13.096 días no tenían algún dato de la NASA y se completaron con el promedio de ese mismo día en los otros años."
+      ]
+    },
+    "factor_r": {
+      "usado": 453.7,
+      "mgap": null,
+      "nasa": 1585,
+      "fuente": "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+      "medido": {
+        "r": 453.7,
+        "r_mj_mm_ha_h": 4537,
+        "fuente": "GloREDa 1.2, JRC"
+      }
+    },
+    "secciones": [
+      {
+        "id": "s1",
+        "nombre": "El Volcán",
+        "area_ha": 40.9,
+        "punto": [
+          -39.310809,
+          -71.95492106201365
+        ],
+        "suelo": {
+          "fuente": "ISRIC SoilGrids 2.0 (250 m), 0-30 cm",
+          "lat": -39.310809,
+          "lon": -71.95492106201365,
+          "ok": true,
+          "mundial": true,
+          "factor_k": 0.167,
+          "tolerancia_t": null,
+          "arena": 26.8,
+          "limo": 39.1,
+          "arcilla": 34.0,
+          "carbono_organico": 7.53,
+          "materia_organica": 13.0
+        },
+        "ndvi": {
+          "fuente": "NASA MODIS MOD13Q1 v061 (Terra, 250 m, 16 días) vía Google Earth Engine (ORNL no respondió)",
+          "mensual": [
+            {
+              "anio": 2022,
+              "mes": 1,
+              "ndvi": 0.828
+            },
+            {
+              "anio": 2022,
+              "mes": 2,
+              "ndvi": 0.825
+            },
+            {
+              "anio": 2022,
+              "mes": 3,
+              "ndvi": 0.826
+            },
+            {
+              "anio": 2022,
+              "mes": 4,
+              "ndvi": 0.795
+            },
+            {
+              "anio": 2022,
+              "mes": 5,
+              "ndvi": 0.722
+            },
+            {
+              "anio": 2022,
+              "mes": 6,
+              "ndvi": 0.688
+            },
+            {
+              "anio": 2022,
+              "mes": 7,
+              "ndvi": 0.674
+            },
+            {
+              "anio": 2022,
+              "mes": 8,
+              "ndvi": 0.696
+            },
+            {
+              "anio": 2022,
+              "mes": 9,
+              "ndvi": 0.738
+            },
+            {
+              "anio": 2022,
+              "mes": 10,
+              "ndvi": 0.755
+            },
+            {
+              "anio": 2022,
+              "mes": 11,
+              "ndvi": 0.817
+            },
+            {
+              "anio": 2022,
+              "mes": 12,
+              "ndvi": 0.859
+            },
+            {
+              "anio": 2023,
+              "mes": 1,
+              "ndvi": 0.841
+            },
+            {
+              "anio": 2023,
+              "mes": 2,
+              "ndvi": 0.852
+            },
+            {
+              "anio": 2023,
+              "mes": 3,
+              "ndvi": 0.853
+            },
+            {
+              "anio": 2023,
+              "mes": 4,
+              "ndvi": 0.82
+            },
+            {
+              "anio": 2023,
+              "mes": 5,
+              "ndvi": 0.776
+            },
+            {
+              "anio": 2023,
+              "mes": 6,
+              "ndvi": 0.69
+            },
+            {
+              "anio": 2023,
+              "mes": 7,
+              "ndvi": 0.713
+            },
+            {
+              "anio": 2023,
+              "mes": 8,
+              "ndvi": 0.649
+            },
+            {
+              "anio": 2023,
+              "mes": 9,
+              "ndvi": 0.696
+            },
+            {
+              "anio": 2023,
+              "mes": 10,
+              "ndvi": 0.783
+            },
+            {
+              "anio": 2023,
+              "mes": 11,
+              "ndvi": 0.811
+            },
+            {
+              "anio": 2023,
+              "mes": 12,
+              "ndvi": 0.881
+            },
+            {
+              "anio": 2024,
+              "mes": 1,
+              "ndvi": 0.841
+            },
+            {
+              "anio": 2024,
+              "mes": 2,
+              "ndvi": 0.836
+            },
+            {
+              "anio": 2024,
+              "mes": 3,
+              "ndvi": 0.863
+            },
+            {
+              "anio": 2024,
+              "mes": 4,
+              "ndvi": 0.824
+            },
+            {
+              "anio": 2024,
+              "mes": 5,
+              "ndvi": 0.756
+            },
+            {
+              "anio": 2024,
+              "mes": 6,
+              "ndvi": 0.688
+            },
+            {
+              "anio": 2024,
+              "mes": 7,
+              "ndvi": 0.722
+            },
+            {
+              "anio": 2024,
+              "mes": 8,
+              "ndvi": 0.69
+            },
+            {
+              "anio": 2024,
+              "mes": 9,
+              "ndvi": 0.75
+            },
+            {
+              "anio": 2024,
+              "mes": 10,
+              "ndvi": 0.891
+            },
+            {
+              "anio": 2024,
+              "mes": 11,
+              "ndvi": 0.905
+            },
+            {
+              "anio": 2024,
+              "mes": 12,
+              "ndvi": 0.879
+            },
+            {
+              "anio": 2025,
+              "mes": 1,
+              "ndvi": 0.873
+            },
+            {
+              "anio": 2025,
+              "mes": 2,
+              "ndvi": 0.827
+            },
+            {
+              "anio": 2025,
+              "mes": 3,
+              "ndvi": 0.847
+            },
+            {
+              "anio": 2025,
+              "mes": 4,
+              "ndvi": 0.79
+            },
+            {
+              "anio": 2025,
+              "mes": 5,
+              "ndvi": 0.73
+            },
+            {
+              "anio": 2025,
+              "mes": 6,
+              "ndvi": 0.692
+            },
+            {
+              "anio": 2025,
+              "mes": 7,
+              "ndvi": 0.706
+            },
+            {
+              "anio": 2025,
+              "mes": 8,
+              "ndvi": 0.701
+            },
+            {
+              "anio": 2025,
+              "mes": 9,
+              "ndvi": 0.766
+            },
+            {
+              "anio": 2025,
+              "mes": 10,
+              "ndvi": 0.835
+            },
+            {
+              "anio": 2025,
+              "mes": 11,
+              "ndvi": 0.9
+            },
+            {
+              "anio": 2025,
+              "mes": 12,
+              "ndvi": 0.877
+            },
+            {
+              "anio": 2026,
+              "mes": 1,
+              "ndvi": 0.877
+            },
+            {
+              "anio": 2026,
+              "mes": 2,
+              "ndvi": 0.859
+            },
+            {
+              "anio": 2026,
+              "mes": 3,
+              "ndvi": 0.865
+            },
+            {
+              "anio": 2026,
+              "mes": 4,
+              "ndvi": 0.826
+            },
+            {
+              "anio": 2026,
+              "mes": 5,
+              "ndvi": 0.73
+            },
+            {
+              "anio": 2026,
+              "mes": 6,
+              "ndvi": 0.799
+            },
+            {
+              "anio": 2026,
+              "mes": 7,
+              "ndvi": 0.605
+            },
+            {
+              "anio": 2026,
+              "mes": 8,
+              "ndvi": 0.696
+            },
+            {
+              "anio": 2026,
+              "mes": 9,
+              "ndvi": 0.66
+            },
+            {
+              "anio": 2026,
+              "mes": 10,
+              "ndvi": 0.896
+            }
+          ],
+          "temporadas": [
+            {
+              "temporada": "invierno 2022",
+              "ndvi_max": 0.755,
+              "ndvi_min": 0.674,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2022/23",
+              "ndvi_max": 0.859,
+              "ndvi_min": 0.841,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2023",
+              "ndvi_max": 0.783,
+              "ndvi_min": 0.649,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2023/24",
+              "ndvi_max": 0.881,
+              "ndvi_min": 0.836,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2024",
+              "ndvi_max": 0.891,
+              "ndvi_min": 0.688,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2024/25",
+              "ndvi_max": 0.879,
+              "ndvi_min": 0.827,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2025",
+              "ndvi_max": 0.835,
+              "ndvi_min": 0.692,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2025/26",
+              "ndvi_max": 0.877,
+              "ndvi_min": 0.859,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2026",
+              "ndvi_max": 0.896,
+              "ndvi_min": 0.605,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            }
+          ],
+          "descubierto_por_anio": [
+            {
+              "anio": 2022,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2023,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2024,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2025,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2026,
+              "meses_descubierto": 0,
+              "meses": []
+            }
+          ],
+          "umbrales": {
+            "descubierto": 0.3,
+            "cultivo": 0.55
+          },
+          "error": null,
+          "metodos": {
+            "ok": true,
+            "anios": 5,
+            "meses": 58,
+            "metodos": [
+              {
+                "id": "fijo",
+                "nombre": "Corte fijo (regla agronómica)",
+                "corte": 0.3,
+                "meses_por_anio": 0.0
+              },
+              {
+                "id": "otsu",
+                "nombre": "Corte automático por sección (Otsu)",
+                "corte": null,
+                "meses_por_anio": null,
+                "aplica": false,
+                "separacion": 0.139,
+                "promedio_grupo_bajo": 0.705
+              }
+            ],
+            "coincidencia_pct": null,
+            "kappa": null,
+            "distintos": [],
+            "lectura": "La sección no pasó por dos estados claros (casi siempre verde o casi siempre pelada): el corte automático no tiene qué separar y vale el corte fijo."
+          },
+          "hls": {
+            "ok": true,
+            "mensual": [
+              {
+                "anio": 2023,
+                "mes": 11,
+                "ndvi": 0.837
+              },
+              {
+                "anio": 2023,
+                "mes": 12,
+                "ndvi": 0.86
+              },
+              {
+                "anio": 2024,
+                "mes": 1,
+                "ndvi": 0.821
+              },
+              {
+                "anio": 2024,
+                "mes": 2,
+                "ndvi": 0.8
+              },
+              {
+                "anio": 2024,
+                "mes": 3,
+                "ndvi": 0.829
+              },
+              {
+                "anio": 2024,
+                "mes": 4,
+                "ndvi": 0.849
+              },
+              {
+                "anio": 2024,
+                "mes": 5,
+                "ndvi": 0.808
+              },
+              {
+                "anio": 2024,
+                "mes": 6,
+                "ndvi": null
+              },
+              {
+                "anio": 2024,
+                "mes": 7,
+                "ndvi": 0.715
+              },
+              {
+                "anio": 2024,
+                "mes": 8,
+                "ndvi": 0.712
+              },
+              {
+                "anio": 2024,
+                "mes": 9,
+                "ndvi": 0.752
+              },
+              {
+                "anio": 2024,
+                "mes": 10,
+                "ndvi": 0.854
+              },
+              {
+                "anio": 2024,
+                "mes": 11,
+                "ndvi": 0.876
+              },
+              {
+                "anio": 2024,
+                "mes": 12,
+                "ndvi": 0.887
+              },
+              {
+                "anio": 2025,
+                "mes": 1,
+                "ndvi": 0.858
+              },
+              {
+                "anio": 2025,
+                "mes": 2,
+                "ndvi": 0.835
+              },
+              {
+                "anio": 2025,
+                "mes": 3,
+                "ndvi": 0.85
+              },
+              {
+                "anio": 2025,
+                "mes": 4,
+                "ndvi": 0.84
+              },
+              {
+                "anio": 2025,
+                "mes": 5,
+                "ndvi": 0.773
+              },
+              {
+                "anio": 2025,
+                "mes": 6,
+                "ndvi": 0.741
+              },
+              {
+                "anio": 2025,
+                "mes": 7,
+                "ndvi": 0.702
+              },
+              {
+                "anio": 2025,
+                "mes": 8,
+                "ndvi": 0.706
+              },
+              {
+                "anio": 2025,
+                "mes": 9,
+                "ndvi": 0.752
+              },
+              {
+                "anio": 2025,
+                "mes": 10,
+                "ndvi": 0.843
+              },
+              {
+                "anio": 2025,
+                "mes": 11,
+                "ndvi": 0.877
+              },
+              {
+                "anio": 2025,
+                "mes": 12,
+                "ndvi": 0.883
+              },
+              {
+                "anio": 2026,
+                "mes": 1,
+                "ndvi": 0.85
+              },
+              {
+                "anio": 2026,
+                "mes": 2,
+                "ndvi": 0.841
+              },
+              {
+                "anio": 2026,
+                "mes": 3,
+                "ndvi": 0.849
+              },
+              {
+                "anio": 2026,
+                "mes": 4,
+                "ndvi": 0.855
+              },
+              {
+                "anio": 2026,
+                "mes": 5,
+                "ndvi": 0.75
+              },
+              {
+                "anio": 2026,
+                "mes": 6,
+                "ndvi": 0.745
+              },
+              {
+                "anio": 2026,
+                "mes": 7,
+                "ndvi": 0.709
+              },
+              {
+                "anio": 2026,
+                "mes": 8,
+                "ndvi": 0.71
+              },
+              {
+                "anio": 2026,
+                "mes": 9,
+                "ndvi": 0.721
+              },
+              {
+                "anio": 2026,
+                "mes": 10,
+                "ndvi": 0.872
+              }
+            ],
+            "fuente": "NASA HLS v002 (Landsat 8-9 + Sentinel-2, 30 m) vía Google Earth Engine",
+            "correlacion": 0.92,
+            "dif_media": 0.026,
+            "coincidencia_pct": 97,
+            "meses_comunes": 35,
+            "desde_cache": true
+          }
+        },
+        "agua_util_mm": 120,
+        "agua_util_origen": "valor típico (120 mm) porque no hay análisis de suelo",
+        "cdl": null,
+        "analisis_suelo": {
+          "hay_analisis": false,
+          "notas": [],
+          "alertas": []
+        },
+        "problemas": [],
+        "actual": {
+          "id": "actual",
+          "nombre": "Rotación actual",
+          "descripcion": "Lo que se hizo en los últimos años: pradera / pradera.",
+          "tipo": "actual",
+          "anios": [
+            [
+              "pradera",
+              "pradera"
+            ]
+          ],
+          "erosion": {
+            "a_t_ha": 21.69,
+            "tolerancia_t": 7.0,
+            "ratio": 3.1,
+            "cumple": false,
+            "exigible": true,
+            "r": 454,
+            "k": 0.167,
+            "ls": 9.539,
+            "c": 0.03,
+            "p": 1.0,
+            "pendiente_pct": 16.7,
+            "largo_m": 300,
+            "largo_origen": "srtm",
+            "aproximaciones": [],
+            "rango": {
+              "p10": 15.1,
+              "p50": 20.8,
+              "p90": 28.1,
+              "prob_supera_t": 1.0,
+              "simulaciones": 4000
+            }
+          },
+          "cobertura_mensual": [
+            0.953,
+            0.952,
+            0.956,
+            0.955,
+            0.955,
+            0.955,
+            0.954,
+            0.954,
+            0.954,
+            0.953,
+            0.953,
+            0.953
+          ],
+          "meses_descubierto": [],
+          "ventana_peligro": [],
+          "riesgo": {
+            "seca": 0.429,
+            "helada": 0.0,
+            "calor": 0.0,
+            "deficit_medio": 0.449,
+            "perdida_media": null,
+            "perdida_anio_seco": null,
+            "caida_anio_seco": null,
+            "por_cultivo": [
+              {
+                "cultivo": "pradera",
+                "nombre": "Pradera (festuca + trébol blanco + lotus)",
+                "prob_seca": 0.429,
+                "ventana_agua": "rebrote de primavera-verano: 11 dic a 11 mar"
+              }
+            ]
+          },
+          "ingreso": {
+            "usa_margenes": false,
+            "usd_ha_anio": null,
+            "usd_ha_anio_con_riesgo": null,
+            "indice_relativo": 0.45,
+            "renta_kg": null,
+            "renta_usd_ha": null,
+            "precio_soja": null,
+            "usd_ha_anio_despues_de_renta": null,
+            "equilibrios": [],
+            "margenes_estimados": []
+          },
+          "forraje": 1.0,
+          "carbono": {
+            "indice": 1.0,
+            "tendencia": "sube",
+            "meses_raices_vivas": 12.0
+          },
+          "puntajes": {
+            "suelo": 30,
+            "agua": 16,
+            "clima": 100,
+            "ingreso": 19,
+            "forraje": 100,
+            "simplicidad": 100,
+            "diversificacion": 26
+          },
+          "alertas": [
+            "Erosión estimada 21,7 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP."
+          ],
+          "penalizacion": 1.0,
+          "es_actual": true,
+          "puntaje_total": 70.4,
+          "beneficios_extra": [
+            "Incluye pradera, que contaste que te anduvo bien."
+          ],
+          "explicacion": {
+            "por_que": [
+              "Es lo que se viene haciendo: la línea de base contra la que se comparan las demás."
+            ],
+            "evidencia": [
+              "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,167 × LS 9,54 × C 0,030 × P 1,0 = 21,7 t/ha/año.",
+              "LS con largo de ladera de 300 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+              "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR).",
+              "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+              "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 39 % limo, 34 % arcilla y 13,0 % de materia orgánica; K 0,167 (EPIC), tolerancia típica 7 t/ha/año, pendiente 16,7 %.",
+              "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+              "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+            ],
+            "beneficios": [
+              "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura.",
+              "Incluye leguminosas que fijan nitrógeno.",
+              "Aporta forraje (100 % de las temporadas).",
+              "Incluye pradera, que contaste que te anduvo bien."
+            ],
+            "huecos": [
+              "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+              "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+              "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares."
+            ],
+            "riesgos": [
+              "Seca en floración en 4 de cada 10 años en promedio para sus cultivos.",
+              "Erosión estimada 21,7 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP."
+            ]
+          }
+        },
+        "alternativas": [
+          {
+            "id": "campo_natural",
+            "nombre": "Campo natural con manejo del pastoreo",
+            "descripcion": "Mantener o recuperar el campo natural, ajustando la carga.",
+            "tipo": "ganadera",
+            "anios": [
+              [
+                "campo_natural",
+                "campo_natural"
+              ]
+            ],
+            "erosion": {
+              "a_t_ha": 14.46,
+              "tolerancia_t": 7.0,
+              "ratio": 2.07,
+              "cumple": true,
+              "exigible": false,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.02,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [],
+              "rango": {
+                "p10": 10.1,
+                "p50": 13.9,
+                "p90": 18.7,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "cobertura_mensual": [
+              0.953,
+              0.952,
+              0.956,
+              0.955,
+              0.955,
+              0.955,
+              0.954,
+              0.954,
+              0.954,
+              0.953,
+              0.953,
+              0.953
+            ],
+            "meses_descubierto": [],
+            "ventana_peligro": [],
+            "riesgo": {
+              "seca": 0.286,
+              "helada": 0.0,
+              "calor": 0.0,
+              "deficit_medio": 0.352,
+              "perdida_media": null,
+              "perdida_anio_seco": null,
+              "caida_anio_seco": null,
+              "por_cultivo": [
+                {
+                  "cultivo": "campo_natural",
+                  "nombre": "Campo natural",
+                  "prob_seca": 0.286,
+                  "ventana_agua": "crecimiento de verano: 11 dic a 11 mar"
+                }
+              ]
+            },
+            "ingreso": {
+              "usa_margenes": false,
+              "usd_ha_anio": null,
+              "usd_ha_anio_con_riesgo": null,
+              "indice_relativo": 0.3,
+              "renta_kg": null,
+              "renta_usd_ha": null,
+              "precio_soja": null,
+              "usd_ha_anio_despues_de_renta": null,
+              "equilibrios": [],
+              "margenes_estimados": []
+            },
+            "forraje": 0.8,
+            "carbono": {
+              "indice": 1.0,
+              "tendencia": "sube",
+              "meses_raices_vivas": 12.0
+            },
+            "puntajes": {
+              "suelo": 30,
+              "agua": 48,
+              "clima": 100,
+              "ingreso": 7,
+              "forraje": 80,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "alertas": [
+              "Erosión estimada 14,5 t/ha/año, algo más de lo que aguanta este suelo (7). En campo natural el Plan de Uso no se exige, pero conviene ajustar la carga para que el campo no se pele."
+            ],
+            "penalizacion": 1.0,
+            "puntaje_total": 61.7,
+            "explicacion": {
+              "por_que": [
+                "Baja la erosión de 21,7 a 14,5 t/ha/año (tolerancia del suelo: 7).",
+                "Reparte el riesgo de seca: pasar la floración sin agua baja de 4 de cada 10 años a 3 de cada 10 años, en promedio."
+              ],
+              "evidencia": [
+                "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,167 × LS 9,54 × C 0,020 × P 1,0 = 14,5 t/ha/año.",
+                "LS con largo de ladera de 300 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+                "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR).",
+                "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+                "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 39 % limo, 34 % arcilla y 13,0 % de materia orgánica; K 0,167 (EPIC), tolerancia típica 7 t/ha/año, pendiente 16,7 %.",
+                "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+                "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+              ],
+              "beneficios": [
+                "Es campo natural: el Plan de Uso no se exige (es para cultivos y pasturas sembradas).",
+                "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura.",
+                "Aporta forraje (80 % de las temporadas)."
+              ],
+              "huecos": [
+                "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+                "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+                "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares."
+              ],
+              "riesgos": [
+                "Erosión estimada 14,5 t/ha/año, algo más de lo que aguanta este suelo (7). En campo natural el Plan de Uso no se exige, pero conviene ajustar la carga para que el campo no se pele."
+              ]
+            }
+          },
+          {
+            "id": "maiz_trigo_cobertura",
+            "nombre": "Maíz → trigo, con cobertura",
+            "descripcion": "Alterna un cultivo de verano y uno de invierno, con cobertura antes del maíz: más rastrojo y menos suelo desnudo, sin soja.",
+            "tipo": "agrícola",
+            "anios": [
+              [
+                "cobertura",
+                "maiz"
+              ],
+              [
+                "trigo",
+                "barbecho"
+              ]
+            ],
+            "erosion": {
+              "a_t_ha": 98.19,
+              "tolerancia_t": 7.0,
+              "ratio": 14.03,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.1358,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "cobertura"
+              ],
+              "rango": {
+                "p10": 68.3,
+                "p50": 94.1,
+                "p90": 127.1,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "cobertura_mensual": [
+              0.79,
+              0.732,
+              0.649,
+              0.644,
+              0.697,
+              0.78,
+              0.822,
+              0.885,
+              0.894,
+              0.892,
+              0.852,
+              0.814
+            ],
+            "meses_descubierto": [],
+            "ventana_peligro": [],
+            "riesgo": {
+              "seca": 0.1,
+              "helada": 1.0,
+              "calor": 0.0,
+              "deficit_medio": 0.132,
+              "perdida_media": 0.249,
+              "perdida_anio_seco": 0.349,
+              "caida_anio_seco": 0.19,
+              "por_cultivo": [
+                {
+                  "cultivo": "cobertura",
+                  "nombre": "Cultivo de cobertura (avena negra / raigrás / vicia)"
+                },
+                {
+                  "cultivo": "maiz",
+                  "nombre": "Maíz de primera",
+                  "prob_seca": 0.2,
+                  "ventana_agua": "floración (panojamiento-cuaje): 30 nov a 4 ene",
+                  "perdida_media": 0.487,
+                  "perdida_anio_seco": 0.678,
+                  "caida_anio_seco": 0.36,
+                  "prob_calor": 0.0,
+                  "ventana_calor": "floración: 30 nov a 4 ene"
+                },
+                {
+                  "cultivo": "trigo",
+                  "nombre": "Trigo",
+                  "prob_seca": 0.0,
+                  "ventana_agua": "espigazón y floración: 28 sep a 28 oct",
+                  "perdida_media": 0.012,
+                  "perdida_anio_seco": 0.019,
+                  "caida_anio_seco": 0.019,
+                  "prob_helada": 1.0,
+                  "ventana_helada": "espigazón y floración: 28 sep a 23 oct",
+                  "prob_calor": 0.0,
+                  "ventana_calor": "llenado de grano: 23 oct a 17 nov"
+                }
+              ]
+            },
+            "ingreso": {
+              "usa_margenes": false,
+              "usd_ha_anio": null,
+              "usd_ha_anio_con_riesgo": null,
+              "indice_relativo": 0.62,
+              "renta_kg": null,
+              "renta_usd_ha": null,
+              "precio_soja": null,
+              "usd_ha_anio_despues_de_renta": null,
+              "equilibrios": [],
+              "margenes_estimados": []
+            },
+            "forraje": 0.05,
+            "carbono": {
+              "indice": 0.61,
+              "tendencia": "sube",
+              "meses_raices_vivas": 10.6
+            },
+            "puntajes": {
+              "suelo": 20,
+              "agua": 89,
+              "clima": 0,
+              "ingreso": 48,
+              "forraje": 5,
+              "simplicidad": 63,
+              "diversificacion": 58
+            },
+            "alertas": [
+              "Erosión estimada 98,2 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+              "En años secos, terminar la cobertura 30-45 días antes de sembrar el verano para no gastar el agua del perfil.",
+              "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?)."
+            ],
+            "penalizacion": 1.0,
+            "puntaje_total": 38.0,
+            "explicacion": {
+              "por_que": [
+                "Reparte el riesgo de seca: pasar la floración sin agua baja de 4 de cada 10 años a 1 de cada 10 años, en promedio."
+              ],
+              "evidencia": [
+                "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,167 × LS 9,54 × C 0,136 × P 1,0 = 98,2 t/ha/año.",
+                "LS con largo de ladera de 300 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+                "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR), con aproximación propia para cultivo de cobertura.",
+                "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+                "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 39 % limo, 34 % arcilla y 13,0 % de materia orgánica; K 0,167 (EPIC), tolerancia típica 7 t/ha/año, pendiente 16,7 %.",
+                "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+                "Maíz de primera: pasó su floración (panojamiento-cuaje): 30 nov a 4 ene con menos de la mitad del agua que necesitaba en 2 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+                "Maíz de primera: en un año seco, de los que vienen 1 de cada 5, pierde 68 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+                "Trigo: pasó su espigazón y floración: 28 sep a 28 oct con menos de la mitad del agua que necesitaba en menos de 1 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+                "Trigo: en un año seco, de los que vienen 1 de cada 5, pierde 2 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+                "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+              ],
+              "beneficios": [
+                "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura."
+              ],
+              "huecos": [
+                "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+                "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+                "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares.",
+                "Aproximación propia para cultivo de cobertura: no está en Erosión 6.0 y se usó Cereales de Invierno con rendimiento bajo."
+              ],
+              "riesgos": [
+                "Trigo: helada (≤ 2 °C a 2 m) en espigazón y floración: 28 sep a 23 oct en 10 de cada 10 años.",
+                "Erosión estimada 98,2 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+                "En años secos, terminar la cobertura 30-45 días antes de sembrar el verano para no gastar el agua del perfil.",
+                "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?).",
+                "El clima se está corriendo: para maíz de primera la seca en floración pasó de 1 de cada 10 años (1991-2008) a 4 de cada 10 años (2009-2025)."
+              ]
+            }
+          }
+        ],
+        "nota_tolerancia": "Con solo cultivos, ninguna rotación cumple lo que aguanta el suelo en este lote: la mejor (maíz → trigo, con cobertura) perdería 98,2 t/ha/año y el suelo aguanta 7",
+        "todas": [
+          {
+            "id": "campo_natural",
+            "nombre": "Campo natural con manejo del pastoreo",
+            "puntaje_total": 61.7,
+            "puntajes": {
+              "suelo": 30,
+              "agua": 48,
+              "clima": 100,
+              "ingreso": 7,
+              "forraje": 80,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "erosion": {
+              "a_t_ha": 14.46,
+              "tolerancia_t": 7.0,
+              "ratio": 2.07,
+              "cumple": true,
+              "exigible": false,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.02,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [],
+              "rango": {
+                "p10": 10.1,
+                "p50": 13.9,
+                "p90": 18.7,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "riesgo": {
+              "seca": 0.286
+            }
+          },
+          {
+            "id": "pradera_permanente",
+            "nombre": "Pradera permanente (renovación cada 4 años)",
+            "puntaje_total": 70.4,
+            "puntajes": {
+              "suelo": 30,
+              "agua": 16,
+              "clima": 100,
+              "ingreso": 19,
+              "forraje": 100,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "erosion": {
+              "a_t_ha": 26.74,
+              "tolerancia_t": 7.0,
+              "ratio": 3.82,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.037,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": []
+            },
+            "riesgo": {
+              "seca": 0.429
+            }
+          },
+          {
+            "id": "verdeo_sorgo",
+            "nombre": "Verdeo de invierno → sorgo forrajero",
+            "puntaje_total": 68.4,
+            "puntajes": {
+              "suelo": 16,
+              "agua": 67,
+              "clima": 100,
+              "ingreso": 40,
+              "forraje": 90,
+              "simplicidad": 68,
+              "diversificacion": 52
+            },
+            "erosion": {
+              "a_t_ha": 115.66,
+              "tolerancia_t": 7.0,
+              "ratio": 16.52,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.16,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "verdeo"
+              ]
+            },
+            "riesgo": {
+              "seca": 0.2
+            }
+          },
+          {
+            "id": "maiz_trigo_cobertura",
+            "nombre": "Maíz → trigo, con cobertura",
+            "puntaje_total": 38.0,
+            "puntajes": {
+              "suelo": 20,
+              "agua": 89,
+              "clima": 0,
+              "ingreso": 48,
+              "forraje": 5,
+              "simplicidad": 63,
+              "diversificacion": 58
+            },
+            "erosion": {
+              "a_t_ha": 98.19,
+              "tolerancia_t": 7.0,
+              "ratio": 14.03,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.1358,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "cobertura"
+              ],
+              "rango": {
+                "p10": 68.3,
+                "p50": 94.1,
+                "p90": 127.1,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "riesgo": {
+              "seca": 0.1
+            }
+          },
+          {
+            "id": "trigo_colza_cebada",
+            "nombre": "Trigo → colza → cebada",
+            "puntaje_total": 35.0,
+            "puntajes": {
+              "suelo": 6,
+              "agua": 100,
+              "clima": 0,
+              "ingreso": 46,
+              "forraje": 0,
+              "simplicidad": 72,
+              "diversificacion": 58
+            },
+            "erosion": {
+              "a_t_ha": 77.52,
+              "tolerancia_t": 7.0,
+              "ratio": 11.07,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.167,
+              "ls": 9.539,
+              "c": 0.1073,
+              "p": 1.0,
+              "pendiente_pct": 16.7,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": []
+            },
+            "riesgo": {
+              "seca": 0.0
+            }
+          }
+        ],
+        "recomendada_id": "campo_natural",
+        "aceptabilidad": null,
+        "escala_lote": {
+          "suelo": [
+            6,
+            36.0
+          ],
+          "agua": [
+            16,
+            100
+          ],
+          "clima": [
+            0,
+            100
+          ],
+          "ingreso": [
+            7,
+            48
+          ],
+          "forraje": [
+            0,
+            100
+          ],
+          "simplicidad": [
+            63,
+            100
+          ],
+          "diversificacion": [
+            26,
+            58
+          ]
+        }
+      },
+      {
+        "id": "s2",
+        "nombre": "La Vega",
+        "area_ha": 40.9,
+        "punto": [
+          -39.31,
+          -71.95
+        ],
+        "suelo": {
+          "fuente": "ISRIC SoilGrids 2.0 (250 m), 0-30 cm",
+          "lat": -39.31,
+          "lon": -71.95,
+          "ok": true,
+          "mundial": true,
+          "factor_k": 0.166,
+          "tolerancia_t": null,
+          "arena": 27.3,
+          "limo": 38.0,
+          "arcilla": 34.7,
+          "carbono_organico": 10.38,
+          "materia_organica": 17.9
+        },
+        "ndvi": {
+          "fuente": "NASA MODIS MOD13Q1 v061 (Terra, 250 m, 16 días) vía Google Earth Engine (ORNL no respondió)",
+          "mensual": [
+            {
+              "anio": 2022,
+              "mes": 1,
+              "ndvi": 0.698
+            },
+            {
+              "anio": 2022,
+              "mes": 2,
+              "ndvi": 0.72
+            },
+            {
+              "anio": 2022,
+              "mes": 3,
+              "ndvi": 0.75
+            },
+            {
+              "anio": 2022,
+              "mes": 4,
+              "ndvi": 0.76
+            },
+            {
+              "anio": 2022,
+              "mes": 5,
+              "ndvi": 0.693
+            },
+            {
+              "anio": 2022,
+              "mes": 6,
+              "ndvi": 0.625
+            },
+            {
+              "anio": 2022,
+              "mes": 7,
+              "ndvi": 0.597
+            },
+            {
+              "anio": 2022,
+              "mes": 8,
+              "ndvi": 0.696
+            },
+            {
+              "anio": 2022,
+              "mes": 9,
+              "ndvi": 0.742
+            },
+            {
+              "anio": 2022,
+              "mes": 10,
+              "ndvi": 0.8
+            },
+            {
+              "anio": 2022,
+              "mes": 11,
+              "ndvi": 0.805
+            },
+            {
+              "anio": 2022,
+              "mes": 12,
+              "ndvi": 0.845
+            },
+            {
+              "anio": 2023,
+              "mes": 1,
+              "ndvi": 0.77
+            },
+            {
+              "anio": 2023,
+              "mes": 2,
+              "ndvi": 0.671
+            },
+            {
+              "anio": 2023,
+              "mes": 3,
+              "ndvi": 0.73
+            },
+            {
+              "anio": 2023,
+              "mes": 4,
+              "ndvi": 0.785
+            },
+            {
+              "anio": 2023,
+              "mes": 5,
+              "ndvi": 0.728
+            },
+            {
+              "anio": 2023,
+              "mes": 6,
+              "ndvi": 0.673
+            },
+            {
+              "anio": 2023,
+              "mes": 7,
+              "ndvi": 0.684
+            },
+            {
+              "anio": 2023,
+              "mes": 8,
+              "ndvi": 0.691
+            },
+            {
+              "anio": 2023,
+              "mes": 9,
+              "ndvi": 0.756
+            },
+            {
+              "anio": 2023,
+              "mes": 10,
+              "ndvi": 0.832
+            },
+            {
+              "anio": 2023,
+              "mes": 11,
+              "ndvi": 0.839
+            },
+            {
+              "anio": 2023,
+              "mes": 12,
+              "ndvi": 0.839
+            },
+            {
+              "anio": 2024,
+              "mes": 1,
+              "ndvi": 0.762
+            },
+            {
+              "anio": 2024,
+              "mes": 2,
+              "ndvi": 0.708
+            },
+            {
+              "anio": 2024,
+              "mes": 3,
+              "ndvi": 0.738
+            },
+            {
+              "anio": 2024,
+              "mes": 4,
+              "ndvi": 0.738
+            },
+            {
+              "anio": 2024,
+              "mes": 5,
+              "ndvi": 0.711
+            },
+            {
+              "anio": 2024,
+              "mes": 6,
+              "ndvi": 0.657
+            },
+            {
+              "anio": 2024,
+              "mes": 7,
+              "ndvi": 0.643
+            },
+            {
+              "anio": 2024,
+              "mes": 8,
+              "ndvi": 0.665
+            },
+            {
+              "anio": 2024,
+              "mes": 9,
+              "ndvi": 0.729
+            },
+            {
+              "anio": 2024,
+              "mes": 10,
+              "ndvi": 0.893
+            },
+            {
+              "anio": 2024,
+              "mes": 11,
+              "ndvi": 0.865
+            },
+            {
+              "anio": 2024,
+              "mes": 12,
+              "ndvi": 0.838
+            },
+            {
+              "anio": 2025,
+              "mes": 1,
+              "ndvi": 0.799
+            },
+            {
+              "anio": 2025,
+              "mes": 2,
+              "ndvi": 0.758
+            },
+            {
+              "anio": 2025,
+              "mes": 3,
+              "ndvi": 0.757
+            },
+            {
+              "anio": 2025,
+              "mes": 4,
+              "ndvi": 0.769
+            },
+            {
+              "anio": 2025,
+              "mes": 5,
+              "ndvi": 0.716
+            },
+            {
+              "anio": 2025,
+              "mes": 6,
+              "ndvi": 0.689
+            },
+            {
+              "anio": 2025,
+              "mes": 7,
+              "ndvi": 0.665
+            },
+            {
+              "anio": 2025,
+              "mes": 8,
+              "ndvi": 0.72
+            },
+            {
+              "anio": 2025,
+              "mes": 9,
+              "ndvi": 0.812
+            },
+            {
+              "anio": 2025,
+              "mes": 10,
+              "ndvi": 0.819
+            },
+            {
+              "anio": 2025,
+              "mes": 11,
+              "ndvi": 0.847
+            },
+            {
+              "anio": 2025,
+              "mes": 12,
+              "ndvi": 0.798
+            },
+            {
+              "anio": 2026,
+              "mes": 1,
+              "ndvi": 0.792
+            },
+            {
+              "anio": 2026,
+              "mes": 2,
+              "ndvi": 0.767
+            },
+            {
+              "anio": 2026,
+              "mes": 3,
+              "ndvi": 0.796
+            },
+            {
+              "anio": 2026,
+              "mes": 4,
+              "ndvi": 0.809
+            },
+            {
+              "anio": 2026,
+              "mes": 5,
+              "ndvi": 0.699
+            },
+            {
+              "anio": 2026,
+              "mes": 6,
+              "ndvi": 0.717
+            },
+            {
+              "anio": 2026,
+              "mes": 7,
+              "ndvi": 0.592
+            },
+            {
+              "anio": 2026,
+              "mes": 8,
+              "ndvi": 0.724
+            },
+            {
+              "anio": 2026,
+              "mes": 9,
+              "ndvi": 0.808
+            },
+            {
+              "anio": 2026,
+              "mes": 10,
+              "ndvi": 0.866
+            }
+          ],
+          "temporadas": [
+            {
+              "temporada": "invierno 2022",
+              "ndvi_max": 0.8,
+              "ndvi_min": 0.597,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2022/23",
+              "ndvi_max": 0.845,
+              "ndvi_min": 0.671,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2023",
+              "ndvi_max": 0.832,
+              "ndvi_min": 0.673,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2023/24",
+              "ndvi_max": 0.839,
+              "ndvi_min": 0.708,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2024",
+              "ndvi_max": 0.893,
+              "ndvi_min": 0.643,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2024/25",
+              "ndvi_max": 0.838,
+              "ndvi_min": 0.757,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2025",
+              "ndvi_max": 0.819,
+              "ndvi_min": 0.665,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2025/26",
+              "ndvi_max": 0.798,
+              "ndvi_min": 0.767,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2026",
+              "ndvi_max": 0.866,
+              "ndvi_min": 0.592,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            }
+          ],
+          "descubierto_por_anio": [
+            {
+              "anio": 2022,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2023,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2024,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2025,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2026,
+              "meses_descubierto": 0,
+              "meses": []
+            }
+          ],
+          "umbrales": {
+            "descubierto": 0.3,
+            "cultivo": 0.55
+          },
+          "error": null,
+          "metodos": {
+            "ok": true,
+            "anios": 5,
+            "meses": 58,
+            "metodos": [
+              {
+                "id": "fijo",
+                "nombre": "Corte fijo (regla agronómica)",
+                "corte": 0.3,
+                "meses_por_anio": 0.0
+              },
+              {
+                "id": "otsu",
+                "nombre": "Corte automático por sección (Otsu)",
+                "corte": null,
+                "meses_por_anio": null,
+                "aplica": false,
+                "separacion": 0.113,
+                "promedio_grupo_bajo": 0.692
+              }
+            ],
+            "coincidencia_pct": null,
+            "kappa": null,
+            "distintos": [],
+            "lectura": "La sección no pasó por dos estados claros (casi siempre verde o casi siempre pelada): el corte automático no tiene qué separar y vale el corte fijo."
+          },
+          "hls": {
+            "ok": true,
+            "mensual": [
+              {
+                "anio": 2023,
+                "mes": 11,
+                "ndvi": 0.83
+              },
+              {
+                "anio": 2023,
+                "mes": 12,
+                "ndvi": 0.839
+              },
+              {
+                "anio": 2024,
+                "mes": 1,
+                "ndvi": 0.739
+              },
+              {
+                "anio": 2024,
+                "mes": 2,
+                "ndvi": 0.702
+              },
+              {
+                "anio": 2024,
+                "mes": 3,
+                "ndvi": 0.756
+              },
+              {
+                "anio": 2024,
+                "mes": 4,
+                "ndvi": 0.802
+              },
+              {
+                "anio": 2024,
+                "mes": 5,
+                "ndvi": 0.754
+              },
+              {
+                "anio": 2024,
+                "mes": 6,
+                "ndvi": null
+              },
+              {
+                "anio": 2024,
+                "mes": 7,
+                "ndvi": 0.685
+              },
+              {
+                "anio": 2024,
+                "mes": 8,
+                "ndvi": 0.684
+              },
+              {
+                "anio": 2024,
+                "mes": 9,
+                "ndvi": 0.727
+              },
+              {
+                "anio": 2024,
+                "mes": 10,
+                "ndvi": 0.837
+              },
+              {
+                "anio": 2024,
+                "mes": 11,
+                "ndvi": 0.868
+              },
+              {
+                "anio": 2024,
+                "mes": 12,
+                "ndvi": 0.854
+              },
+              {
+                "anio": 2025,
+                "mes": 1,
+                "ndvi": 0.788
+              },
+              {
+                "anio": 2025,
+                "mes": 2,
+                "ndvi": 0.755
+              },
+              {
+                "anio": 2025,
+                "mes": 3,
+                "ndvi": 0.759
+              },
+              {
+                "anio": 2025,
+                "mes": 4,
+                "ndvi": 0.79
+              },
+              {
+                "anio": 2025,
+                "mes": 5,
+                "ndvi": 0.771
+              },
+              {
+                "anio": 2025,
+                "mes": 6,
+                "ndvi": 0.726
+              },
+              {
+                "anio": 2025,
+                "mes": 7,
+                "ndvi": 0.681
+              },
+              {
+                "anio": 2025,
+                "mes": 8,
+                "ndvi": 0.724
+              },
+              {
+                "anio": 2025,
+                "mes": 9,
+                "ndvi": 0.76
+              },
+              {
+                "anio": 2025,
+                "mes": 10,
+                "ndvi": 0.829
+              },
+              {
+                "anio": 2025,
+                "mes": 11,
+                "ndvi": 0.853
+              },
+              {
+                "anio": 2025,
+                "mes": 12,
+                "ndvi": 0.845
+              },
+              {
+                "anio": 2026,
+                "mes": 1,
+                "ndvi": 0.81
+              },
+              {
+                "anio": 2026,
+                "mes": 2,
+                "ndvi": 0.781
+              },
+              {
+                "anio": 2026,
+                "mes": 3,
+                "ndvi": 0.804
+              },
+              {
+                "anio": 2026,
+                "mes": 4,
+                "ndvi": 0.813
+              },
+              {
+                "anio": 2026,
+                "mes": 5,
+                "ndvi": 0.728
+              },
+              {
+                "anio": 2026,
+                "mes": 6,
+                "ndvi": 0.734
+              },
+              {
+                "anio": 2026,
+                "mes": 7,
+                "ndvi": 0.694
+              },
+              {
+                "anio": 2026,
+                "mes": 8,
+                "ndvi": 0.715
+              },
+              {
+                "anio": 2026,
+                "mes": 9,
+                "ndvi": 0.732
+              },
+              {
+                "anio": 2026,
+                "mes": 10,
+                "ndvi": 0.865
+              }
+            ],
+            "fuente": "NASA HLS v002 (Landsat 8-9 + Sentinel-2, 30 m) vía Google Earth Engine",
+            "correlacion": 0.88,
+            "dif_media": 0.024,
+            "coincidencia_pct": 97,
+            "meses_comunes": 35,
+            "desde_cache": true
+          }
+        },
+        "agua_util_mm": 120,
+        "agua_util_origen": "valor típico (120 mm) porque no hay análisis de suelo",
+        "cdl": null,
+        "analisis_suelo": {
+          "hay_analisis": false,
+          "notas": [],
+          "alertas": []
+        },
+        "problemas": [
+          "anegamiento"
+        ],
+        "actual": {
+          "id": "actual",
+          "nombre": "Rotación actual",
+          "descripcion": "Lo que se hizo en los últimos años: trigo / barbecho → verdeo de invierno / maíz de primera.",
+          "tipo": "actual",
+          "anios": [
+            [
+              "trigo",
+              "barbecho"
+            ],
+            [
+              "verdeo",
+              "maiz"
+            ]
+          ],
+          "erosion": {
+            "a_t_ha": 89.33,
+            "tolerancia_t": 7.0,
+            "ratio": 12.76,
+            "cumple": false,
+            "exigible": true,
+            "r": 454,
+            "k": 0.166,
+            "ls": 8.409,
+            "c": 0.141,
+            "p": 1.0,
+            "pendiente_pct": 15.44,
+            "largo_m": 300,
+            "largo_origen": "srtm",
+            "aproximaciones": [
+              "verdeo"
+            ],
+            "rango": {
+              "p10": 62.2,
+              "p50": 85.6,
+              "p90": 115.4,
+              "prob_supera_t": 1.0,
+              "simulaciones": 4000
+            }
+          },
+          "cobertura_mensual": [
+            0.778,
+            0.705,
+            0.658,
+            0.674,
+            0.739,
+            0.792,
+            0.822,
+            0.881,
+            0.83,
+            0.766,
+            0.783,
+            0.799
+          ],
+          "meses_descubierto": [],
+          "ventana_peligro": [],
+          "riesgo": {
+            "seca": 0.1,
+            "helada": 1.0,
+            "calor": 0.0,
+            "deficit_medio": 0.132,
+            "perdida_media": 0.249,
+            "perdida_anio_seco": 0.349,
+            "caida_anio_seco": 0.19,
+            "por_cultivo": [
+              {
+                "cultivo": "trigo",
+                "nombre": "Trigo",
+                "prob_seca": 0.0,
+                "ventana_agua": "espigazón y floración: 28 sep a 28 oct",
+                "perdida_media": 0.012,
+                "perdida_anio_seco": 0.019,
+                "caida_anio_seco": 0.019,
+                "prob_helada": 1.0,
+                "ventana_helada": "espigazón y floración: 28 sep a 23 oct",
+                "prob_calor": 0.0,
+                "ventana_calor": "llenado de grano: 23 oct a 17 nov"
+              },
+              {
+                "cultivo": "verdeo",
+                "nombre": "Verdeo de invierno (avena / raigrás para pastoreo)"
+              },
+              {
+                "cultivo": "maiz",
+                "nombre": "Maíz de primera",
+                "prob_seca": 0.2,
+                "ventana_agua": "floración (panojamiento-cuaje): 30 nov a 4 ene",
+                "perdida_media": 0.487,
+                "perdida_anio_seco": 0.678,
+                "caida_anio_seco": 0.36,
+                "prob_calor": 0.0,
+                "ventana_calor": "floración: 30 nov a 4 ene"
+              }
+            ]
+          },
+          "ingreso": {
+            "usa_margenes": false,
+            "usd_ha_anio": null,
+            "usd_ha_anio_con_riesgo": null,
+            "indice_relativo": 0.8,
+            "renta_kg": null,
+            "renta_usd_ha": null,
+            "precio_soja": null,
+            "usd_ha_anio_despues_de_renta": null,
+            "equilibrios": [],
+            "margenes_estimados": []
+          },
+          "forraje": 0.23,
+          "carbono": {
+            "indice": 0.57,
+            "tendencia": "sube",
+            "meses_raices_vivas": 10.3
+          },
+          "puntajes": {
+            "suelo": 18,
+            "agua": 89,
+            "clima": 0,
+            "ingreso": 70,
+            "forraje": 22,
+            "simplicidad": 63,
+            "diversificacion": 58
+          },
+          "alertas": [
+            "Erosión estimada 89,3 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+            "La sección se anega: Trigo sufre con agua estancada en invierno.",
+            "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?)."
+          ],
+          "penalizacion": 0.85,
+          "es_actual": true,
+          "puntaje_total": 33.8,
+          "explicacion": {
+            "por_que": [
+              "Es lo que se viene haciendo: la línea de base contra la que se comparan las demás."
+            ],
+            "evidencia": [
+              "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,166 × LS 8,41 × C 0,141 × P 1,0 = 89,3 t/ha/año.",
+              "LS con largo de ladera de 300 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+              "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR), con aproximación propia para verdeo de invierno.",
+              "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+              "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 38 % limo, 35 % arcilla y 17,9 % de materia orgánica; K 0,166 (EPIC), tolerancia típica 7 t/ha/año, pendiente 15,4 %.",
+              "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+              "Trigo: pasó su espigazón y floración: 28 sep a 28 oct con menos de la mitad del agua que necesitaba en menos de 1 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+              "Trigo: en un año seco, de los que vienen 1 de cada 5, pierde 2 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+              "Maíz de primera: pasó su floración (panojamiento-cuaje): 30 nov a 4 ene con menos de la mitad del agua que necesitaba en 2 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+              "Maíz de primera: en un año seco, de los que vienen 1 de cada 5, pierde 68 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+              "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+            ],
+            "beneficios": [
+              "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura."
+            ],
+            "huecos": [
+              "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+              "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+              "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares.",
+              "Aproximación propia para verdeo de invierno: no está en Erosión 6.0 y se usó Cereales de Invierno con rendimiento bajo."
+            ],
+            "riesgos": [
+              "Trigo: helada (≤ 2 °C a 2 m) en espigazón y floración: 28 sep a 23 oct en 10 de cada 10 años.",
+              "Erosión estimada 89,3 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+              "La sección se anega: Trigo sufre con agua estancada en invierno.",
+              "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?).",
+              "El clima se está corriendo: para maíz de primera la seca en floración pasó de 1 de cada 10 años (1991-2008) a 4 de cada 10 años (2009-2025)."
+            ]
+          }
+        },
+        "alternativas": [
+          {
+            "id": "campo_natural",
+            "nombre": "Campo natural con manejo del pastoreo",
+            "descripcion": "Mantener o recuperar el campo natural, ajustando la carga.",
+            "tipo": "ganadera",
+            "anios": [
+              [
+                "campo_natural",
+                "campo_natural"
+              ]
+            ],
+            "erosion": {
+              "a_t_ha": 12.67,
+              "tolerancia_t": 7.0,
+              "ratio": 1.81,
+              "cumple": true,
+              "exigible": false,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.02,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [],
+              "rango": {
+                "p10": 8.8,
+                "p50": 12.1,
+                "p90": 16.4,
+                "prob_supera_t": 0.99,
+                "simulaciones": 4000
+              }
+            },
+            "cobertura_mensual": [
+              0.953,
+              0.952,
+              0.956,
+              0.955,
+              0.955,
+              0.955,
+              0.954,
+              0.954,
+              0.954,
+              0.953,
+              0.953,
+              0.953
+            ],
+            "meses_descubierto": [],
+            "ventana_peligro": [],
+            "riesgo": {
+              "seca": 0.286,
+              "helada": 0.0,
+              "calor": 0.0,
+              "deficit_medio": 0.352,
+              "perdida_media": null,
+              "perdida_anio_seco": null,
+              "caida_anio_seco": null,
+              "por_cultivo": [
+                {
+                  "cultivo": "campo_natural",
+                  "nombre": "Campo natural",
+                  "prob_seca": 0.286,
+                  "ventana_agua": "crecimiento de verano: 11 dic a 11 mar"
+                }
+              ]
+            },
+            "ingreso": {
+              "usa_margenes": false,
+              "usd_ha_anio": null,
+              "usd_ha_anio_con_riesgo": null,
+              "indice_relativo": 0.3,
+              "renta_kg": null,
+              "renta_usd_ha": null,
+              "precio_soja": null,
+              "usd_ha_anio_despues_de_renta": null,
+              "equilibrios": [],
+              "margenes_estimados": []
+            },
+            "forraje": 0.8,
+            "carbono": {
+              "indice": 1.0,
+              "tendencia": "sube",
+              "meses_raices_vivas": 12.0
+            },
+            "puntajes": {
+              "suelo": 39,
+              "agua": 48,
+              "clima": 100,
+              "ingreso": 7,
+              "forraje": 80,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "alertas": [
+              "Erosión estimada 12,7 t/ha/año, algo más de lo que aguanta este suelo (7). En campo natural el Plan de Uso no se exige, pero conviene ajustar la carga para que el campo no se pele."
+            ],
+            "penalizacion": 1.0,
+            "puntaje_total": 65.5,
+            "explicacion": {
+              "por_que": [
+                "Baja la erosión de 89,3 a 12,7 t/ha/año (tolerancia del suelo: 7).",
+                "Produce forraje para el ganado durante más meses del año."
+              ],
+              "evidencia": [
+                "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,166 × LS 8,41 × C 0,020 × P 1,0 = 12,7 t/ha/año.",
+                "LS con largo de ladera de 300 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+                "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR).",
+                "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+                "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 38 % limo, 35 % arcilla y 17,9 % de materia orgánica; K 0,166 (EPIC), tolerancia típica 7 t/ha/año, pendiente 15,4 %.",
+                "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+                "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+              ],
+              "beneficios": [
+                "Es campo natural: el Plan de Uso no se exige (es para cultivos y pasturas sembradas).",
+                "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura.",
+                "Aporta forraje (80 % de las temporadas)."
+              ],
+              "huecos": [
+                "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+                "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+                "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares."
+              ],
+              "riesgos": [
+                "Erosión estimada 12,7 t/ha/año, algo más de lo que aguanta este suelo (7). En campo natural el Plan de Uso no se exige, pero conviene ajustar la carga para que el campo no se pele."
+              ]
+            }
+          },
+          {
+            "id": "maiz_trigo_cobertura",
+            "nombre": "Maíz → trigo, con cobertura",
+            "descripcion": "Alterna un cultivo de verano y uno de invierno, con cobertura antes del maíz: más rastrojo y menos suelo desnudo, sin soja.",
+            "tipo": "agrícola",
+            "anios": [
+              [
+                "cobertura",
+                "maiz"
+              ],
+              [
+                "trigo",
+                "barbecho"
+              ]
+            ],
+            "erosion": {
+              "a_t_ha": 86.03,
+              "tolerancia_t": 7.0,
+              "ratio": 12.29,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.1358,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "cobertura"
+              ],
+              "rango": {
+                "p10": 59.9,
+                "p50": 82.5,
+                "p90": 111.2,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "cobertura_mensual": [
+              0.79,
+              0.732,
+              0.649,
+              0.644,
+              0.697,
+              0.78,
+              0.822,
+              0.885,
+              0.894,
+              0.892,
+              0.852,
+              0.814
+            ],
+            "meses_descubierto": [],
+            "ventana_peligro": [],
+            "riesgo": {
+              "seca": 0.1,
+              "helada": 1.0,
+              "calor": 0.0,
+              "deficit_medio": 0.132,
+              "perdida_media": 0.249,
+              "perdida_anio_seco": 0.349,
+              "caida_anio_seco": 0.19,
+              "por_cultivo": [
+                {
+                  "cultivo": "cobertura",
+                  "nombre": "Cultivo de cobertura (avena negra / raigrás / vicia)"
+                },
+                {
+                  "cultivo": "maiz",
+                  "nombre": "Maíz de primera",
+                  "prob_seca": 0.2,
+                  "ventana_agua": "floración (panojamiento-cuaje): 30 nov a 4 ene",
+                  "perdida_media": 0.487,
+                  "perdida_anio_seco": 0.678,
+                  "caida_anio_seco": 0.36,
+                  "prob_calor": 0.0,
+                  "ventana_calor": "floración: 30 nov a 4 ene"
+                },
+                {
+                  "cultivo": "trigo",
+                  "nombre": "Trigo",
+                  "prob_seca": 0.0,
+                  "ventana_agua": "espigazón y floración: 28 sep a 28 oct",
+                  "perdida_media": 0.012,
+                  "perdida_anio_seco": 0.019,
+                  "caida_anio_seco": 0.019,
+                  "prob_helada": 1.0,
+                  "ventana_helada": "espigazón y floración: 28 sep a 23 oct",
+                  "prob_calor": 0.0,
+                  "ventana_calor": "llenado de grano: 23 oct a 17 nov"
+                }
+              ]
+            },
+            "ingreso": {
+              "usa_margenes": false,
+              "usd_ha_anio": null,
+              "usd_ha_anio_con_riesgo": null,
+              "indice_relativo": 0.62,
+              "renta_kg": null,
+              "renta_usd_ha": null,
+              "precio_soja": null,
+              "usd_ha_anio_despues_de_renta": null,
+              "equilibrios": [],
+              "margenes_estimados": []
+            },
+            "forraje": 0.05,
+            "carbono": {
+              "indice": 0.61,
+              "tendencia": "sube",
+              "meses_raices_vivas": 10.6
+            },
+            "puntajes": {
+              "suelo": 20,
+              "agua": 89,
+              "clima": 0,
+              "ingreso": 48,
+              "forraje": 5,
+              "simplicidad": 63,
+              "diversificacion": 58
+            },
+            "alertas": [
+              "Erosión estimada 86,0 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+              "La sección se anega: Trigo sufre con agua estancada en invierno.",
+              "En años secos, terminar la cobertura 30-45 días antes de sembrar el verano para no gastar el agua del perfil.",
+              "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?)."
+            ],
+            "penalizacion": 0.85,
+            "puntaje_total": 27.8,
+            "explicacion": {
+              "por_que": [
+                "Baja la erosión de 89,3 a 86,0 t/ha/año (tolerancia del suelo: 7)."
+              ],
+              "evidencia": [
+                "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,166 × LS 8,41 × C 0,136 × P 1,0 = 86,0 t/ha/año.",
+                "LS con largo de ladera de 300 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+                "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR), con aproximación propia para cultivo de cobertura.",
+                "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+                "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 38 % limo, 35 % arcilla y 17,9 % de materia orgánica; K 0,166 (EPIC), tolerancia típica 7 t/ha/año, pendiente 15,4 %.",
+                "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+                "Maíz de primera: pasó su floración (panojamiento-cuaje): 30 nov a 4 ene con menos de la mitad del agua que necesitaba en 2 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+                "Maíz de primera: en un año seco, de los que vienen 1 de cada 5, pierde 68 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+                "Trigo: pasó su espigazón y floración: 28 sep a 28 oct con menos de la mitad del agua que necesitaba en menos de 1 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+                "Trigo: en un año seco, de los que vienen 1 de cada 5, pierde 2 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+                "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+              ],
+              "beneficios": [
+                "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura."
+              ],
+              "huecos": [
+                "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+                "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+                "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares.",
+                "Aproximación propia para cultivo de cobertura: no está en Erosión 6.0 y se usó Cereales de Invierno con rendimiento bajo."
+              ],
+              "riesgos": [
+                "Trigo: helada (≤ 2 °C a 2 m) en espigazón y floración: 28 sep a 23 oct en 10 de cada 10 años.",
+                "Erosión estimada 86,0 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+                "La sección se anega: Trigo sufre con agua estancada en invierno.",
+                "En años secos, terminar la cobertura 30-45 días antes de sembrar el verano para no gastar el agua del perfil.",
+                "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?).",
+                "El clima se está corriendo: para maíz de primera la seca en floración pasó de 1 de cada 10 años (1991-2008) a 4 de cada 10 años (2009-2025)."
+              ]
+            }
+          }
+        ],
+        "nota_tolerancia": "Con solo cultivos, ninguna rotación cumple lo que aguanta el suelo en este lote: la mejor (maíz → trigo, con cobertura) perdería 86 t/ha/año y el suelo aguanta 7",
+        "todas": [
+          {
+            "id": "campo_natural",
+            "nombre": "Campo natural con manejo del pastoreo",
+            "puntaje_total": 65.5,
+            "puntajes": {
+              "suelo": 39,
+              "agua": 48,
+              "clima": 100,
+              "ingreso": 7,
+              "forraje": 80,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "erosion": {
+              "a_t_ha": 12.67,
+              "tolerancia_t": 7.0,
+              "ratio": 1.81,
+              "cumple": true,
+              "exigible": false,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.02,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [],
+              "rango": {
+                "p10": 8.8,
+                "p50": 12.1,
+                "p90": 16.4,
+                "prob_supera_t": 0.99,
+                "simulaciones": 4000
+              }
+            },
+            "riesgo": {
+              "seca": 0.286
+            }
+          },
+          {
+            "id": "pradera_permanente",
+            "nombre": "Pradera permanente (renovación cada 4 años)",
+            "puntaje_total": 67.4,
+            "puntajes": {
+              "suelo": 30,
+              "agua": 16,
+              "clima": 100,
+              "ingreso": 19,
+              "forraje": 100,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "erosion": {
+              "a_t_ha": 23.43,
+              "tolerancia_t": 7.0,
+              "ratio": 3.35,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.037,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": []
+            },
+            "riesgo": {
+              "seca": 0.429
+            }
+          },
+          {
+            "id": "verdeo_sorgo",
+            "nombre": "Verdeo de invierno → sorgo forrajero",
+            "puntaje_total": 63.8,
+            "puntajes": {
+              "suelo": 16,
+              "agua": 67,
+              "clima": 100,
+              "ingreso": 40,
+              "forraje": 90,
+              "simplicidad": 68,
+              "diversificacion": 52
+            },
+            "erosion": {
+              "a_t_ha": 101.34,
+              "tolerancia_t": 7.0,
+              "ratio": 14.48,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.16,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "verdeo"
+              ]
+            },
+            "riesgo": {
+              "seca": 0.2
+            }
+          },
+          {
+            "id": "maiz_trigo_cobertura",
+            "nombre": "Maíz → trigo, con cobertura",
+            "puntaje_total": 27.8,
+            "puntajes": {
+              "suelo": 20,
+              "agua": 89,
+              "clima": 0,
+              "ingreso": 48,
+              "forraje": 5,
+              "simplicidad": 63,
+              "diversificacion": 58
+            },
+            "erosion": {
+              "a_t_ha": 86.03,
+              "tolerancia_t": 7.0,
+              "ratio": 12.29,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.1358,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "cobertura"
+              ],
+              "rango": {
+                "p10": 59.9,
+                "p50": 82.5,
+                "p90": 111.2,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "riesgo": {
+              "seca": 0.1
+            }
+          },
+          {
+            "id": "trigo_colza_cebada",
+            "nombre": "Trigo → colza → cebada",
+            "puntaje_total": 25.7,
+            "puntajes": {
+              "suelo": 6,
+              "agua": 100,
+              "clima": 0,
+              "ingreso": 46,
+              "forraje": 0,
+              "simplicidad": 72,
+              "diversificacion": 58
+            },
+            "erosion": {
+              "a_t_ha": 67.92,
+              "tolerancia_t": 7.0,
+              "ratio": 9.7,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.409,
+              "c": 0.1073,
+              "p": 1.0,
+              "pendiente_pct": 15.44,
+              "largo_m": 300,
+              "largo_origen": "srtm",
+              "aproximaciones": []
+            },
+            "riesgo": {
+              "seca": 0.0
+            }
+          }
+        ],
+        "recomendada_id": "campo_natural",
+        "aceptabilidad": null,
+        "escala_lote": {
+          "suelo": [
+            6,
+            39
+          ],
+          "agua": [
+            16,
+            100
+          ],
+          "clima": [
+            0,
+            100
+          ],
+          "ingreso": [
+            7,
+            70
+          ],
+          "forraje": [
+            0,
+            100
+          ],
+          "simplicidad": [
+            63,
+            100
+          ],
+          "diversificacion": [
+            26,
+            58
+          ]
+        }
+      },
+      {
+        "id": "s3",
+        "nombre": "El Lago",
+        "area_ha": 40.9,
+        "punto": [
+          -39.309191,
+          -71.94507893798634
+        ],
+        "suelo": {
+          "fuente": "ISRIC SoilGrids 2.0 (250 m), 0-30 cm",
+          "lat": -39.309191,
+          "lon": -71.94507893798634,
+          "ok": true,
+          "mundial": true,
+          "factor_k": 0.166,
+          "tolerancia_t": null,
+          "arena": 27.3,
+          "limo": 38.0,
+          "arcilla": 34.8,
+          "carbono_organico": 10.58,
+          "materia_organica": 18.2
+        },
+        "ndvi": {
+          "fuente": "NASA MODIS MOD13Q1 v061 (Terra, 250 m, 16 días) vía Google Earth Engine (ORNL no respondió)",
+          "mensual": [
+            {
+              "anio": 2022,
+              "mes": 1,
+              "ndvi": 0.732
+            },
+            {
+              "anio": 2022,
+              "mes": 2,
+              "ndvi": 0.737
+            },
+            {
+              "anio": 2022,
+              "mes": 3,
+              "ndvi": 0.763
+            },
+            {
+              "anio": 2022,
+              "mes": 4,
+              "ndvi": 0.788
+            },
+            {
+              "anio": 2022,
+              "mes": 5,
+              "ndvi": 0.71
+            },
+            {
+              "anio": 2022,
+              "mes": 6,
+              "ndvi": 0.633
+            },
+            {
+              "anio": 2022,
+              "mes": 7,
+              "ndvi": 0.622
+            },
+            {
+              "anio": 2022,
+              "mes": 8,
+              "ndvi": 0.712
+            },
+            {
+              "anio": 2022,
+              "mes": 9,
+              "ndvi": 0.758
+            },
+            {
+              "anio": 2022,
+              "mes": 10,
+              "ndvi": 0.8
+            },
+            {
+              "anio": 2022,
+              "mes": 11,
+              "ndvi": 0.806
+            },
+            {
+              "anio": 2022,
+              "mes": 12,
+              "ndvi": 0.798
+            },
+            {
+              "anio": 2023,
+              "mes": 1,
+              "ndvi": 0.717
+            },
+            {
+              "anio": 2023,
+              "mes": 2,
+              "ndvi": 0.635
+            },
+            {
+              "anio": 2023,
+              "mes": 3,
+              "ndvi": 0.736
+            },
+            {
+              "anio": 2023,
+              "mes": 4,
+              "ndvi": 0.801
+            },
+            {
+              "anio": 2023,
+              "mes": 5,
+              "ndvi": 0.732
+            },
+            {
+              "anio": 2023,
+              "mes": 6,
+              "ndvi": 0.659
+            },
+            {
+              "anio": 2023,
+              "mes": 7,
+              "ndvi": 0.69
+            },
+            {
+              "anio": 2023,
+              "mes": 8,
+              "ndvi": 0.679
+            },
+            {
+              "anio": 2023,
+              "mes": 9,
+              "ndvi": 0.78
+            },
+            {
+              "anio": 2023,
+              "mes": 10,
+              "ndvi": 0.853
+            },
+            {
+              "anio": 2023,
+              "mes": 11,
+              "ndvi": 0.825
+            },
+            {
+              "anio": 2023,
+              "mes": 12,
+              "ndvi": 0.825
+            },
+            {
+              "anio": 2024,
+              "mes": 1,
+              "ndvi": 0.744
+            },
+            {
+              "anio": 2024,
+              "mes": 2,
+              "ndvi": 0.676
+            },
+            {
+              "anio": 2024,
+              "mes": 3,
+              "ndvi": 0.733
+            },
+            {
+              "anio": 2024,
+              "mes": 4,
+              "ndvi": 0.757
+            },
+            {
+              "anio": 2024,
+              "mes": 5,
+              "ndvi": 0.701
+            },
+            {
+              "anio": 2024,
+              "mes": 6,
+              "ndvi": 0.68
+            },
+            {
+              "anio": 2024,
+              "mes": 7,
+              "ndvi": 0.683
+            },
+            {
+              "anio": 2024,
+              "mes": 8,
+              "ndvi": 0.691
+            },
+            {
+              "anio": 2024,
+              "mes": 9,
+              "ndvi": 0.753
+            },
+            {
+              "anio": 2024,
+              "mes": 10,
+              "ndvi": 0.867
+            },
+            {
+              "anio": 2024,
+              "mes": 11,
+              "ndvi": 0.866
+            },
+            {
+              "anio": 2024,
+              "mes": 12,
+              "ndvi": 0.815
+            },
+            {
+              "anio": 2025,
+              "mes": 1,
+              "ndvi": 0.772
+            },
+            {
+              "anio": 2025,
+              "mes": 2,
+              "ndvi": 0.647
+            },
+            {
+              "anio": 2025,
+              "mes": 3,
+              "ndvi": 0.74
+            },
+            {
+              "anio": 2025,
+              "mes": 4,
+              "ndvi": 0.761
+            },
+            {
+              "anio": 2025,
+              "mes": 5,
+              "ndvi": 0.724
+            },
+            {
+              "anio": 2025,
+              "mes": 6,
+              "ndvi": 0.681
+            },
+            {
+              "anio": 2025,
+              "mes": 7,
+              "ndvi": 0.671
+            },
+            {
+              "anio": 2025,
+              "mes": 8,
+              "ndvi": 0.73
+            },
+            {
+              "anio": 2025,
+              "mes": 9,
+              "ndvi": 0.798
+            },
+            {
+              "anio": 2025,
+              "mes": 10,
+              "ndvi": 0.82
+            },
+            {
+              "anio": 2025,
+              "mes": 11,
+              "ndvi": 0.847
+            },
+            {
+              "anio": 2025,
+              "mes": 12,
+              "ndvi": 0.821
+            },
+            {
+              "anio": 2026,
+              "mes": 1,
+              "ndvi": 0.782
+            },
+            {
+              "anio": 2026,
+              "mes": 2,
+              "ndvi": 0.778
+            },
+            {
+              "anio": 2026,
+              "mes": 3,
+              "ndvi": 0.819
+            },
+            {
+              "anio": 2026,
+              "mes": 4,
+              "ndvi": 0.752
+            },
+            {
+              "anio": 2026,
+              "mes": 5,
+              "ndvi": 0.718
+            },
+            {
+              "anio": 2026,
+              "mes": 6,
+              "ndvi": 0.758
+            },
+            {
+              "anio": 2026,
+              "mes": 7,
+              "ndvi": 0.618
+            },
+            {
+              "anio": 2026,
+              "mes": 8,
+              "ndvi": 0.756
+            },
+            {
+              "anio": 2026,
+              "mes": 9,
+              "ndvi": 0.8
+            },
+            {
+              "anio": 2026,
+              "mes": 10,
+              "ndvi": 0.85
+            }
+          ],
+          "temporadas": [
+            {
+              "temporada": "invierno 2022",
+              "ndvi_max": 0.8,
+              "ndvi_min": 0.622,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2022/23",
+              "ndvi_max": 0.798,
+              "ndvi_min": 0.635,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2023",
+              "ndvi_max": 0.853,
+              "ndvi_min": 0.659,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2023/24",
+              "ndvi_max": 0.825,
+              "ndvi_min": 0.676,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2024",
+              "ndvi_max": 0.867,
+              "ndvi_min": 0.68,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2024/25",
+              "ndvi_max": 0.815,
+              "ndvi_min": 0.647,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2025",
+              "ndvi_max": 0.82,
+              "ndvi_min": 0.671,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "verano 2025/26",
+              "ndvi_max": 0.821,
+              "ndvi_min": 0.778,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            },
+            {
+              "temporada": "invierno 2026",
+              "ndvi_max": 0.85,
+              "ndvi_min": 0.618,
+              "uso_detectado": "cobertura permanente (pastura o campo natural)"
+            }
+          ],
+          "descubierto_por_anio": [
+            {
+              "anio": 2022,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2023,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2024,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2025,
+              "meses_descubierto": 0,
+              "meses": []
+            },
+            {
+              "anio": 2026,
+              "meses_descubierto": 0,
+              "meses": []
+            }
+          ],
+          "umbrales": {
+            "descubierto": 0.3,
+            "cultivo": 0.55
+          },
+          "error": null,
+          "metodos": {
+            "ok": true,
+            "anios": 5,
+            "meses": 58,
+            "metodos": [
+              {
+                "id": "fijo",
+                "nombre": "Corte fijo (regla agronómica)",
+                "corte": 0.3,
+                "meses_por_anio": 0.0
+              },
+              {
+                "id": "otsu",
+                "nombre": "Corte automático por sección (Otsu)",
+                "corte": null,
+                "meses_por_anio": null,
+                "aplica": false,
+                "separacion": 0.105,
+                "promedio_grupo_bajo": 0.694
+              }
+            ],
+            "coincidencia_pct": null,
+            "kappa": null,
+            "distintos": [],
+            "lectura": "La sección no pasó por dos estados claros (casi siempre verde o casi siempre pelada): el corte automático no tiene qué separar y vale el corte fijo."
+          },
+          "hls": {
+            "ok": true,
+            "mensual": [
+              {
+                "anio": 2023,
+                "mes": 11,
+                "ndvi": 0.803
+              },
+              {
+                "anio": 2023,
+                "mes": 12,
+                "ndvi": 0.83
+              },
+              {
+                "anio": 2024,
+                "mes": 1,
+                "ndvi": 0.71
+              },
+              {
+                "anio": 2024,
+                "mes": 2,
+                "ndvi": 0.683
+              },
+              {
+                "anio": 2024,
+                "mes": 3,
+                "ndvi": 0.742
+              },
+              {
+                "anio": 2024,
+                "mes": 4,
+                "ndvi": 0.816
+              },
+              {
+                "anio": 2024,
+                "mes": 5,
+                "ndvi": 0.747
+              },
+              {
+                "anio": 2024,
+                "mes": 6,
+                "ndvi": null
+              },
+              {
+                "anio": 2024,
+                "mes": 7,
+                "ndvi": 0.687
+              },
+              {
+                "anio": 2024,
+                "mes": 8,
+                "ndvi": 0.696
+              },
+              {
+                "anio": 2024,
+                "mes": 9,
+                "ndvi": 0.737
+              },
+              {
+                "anio": 2024,
+                "mes": 10,
+                "ndvi": 0.835
+              },
+              {
+                "anio": 2024,
+                "mes": 11,
+                "ndvi": 0.851
+              },
+              {
+                "anio": 2024,
+                "mes": 12,
+                "ndvi": 0.847
+              },
+              {
+                "anio": 2025,
+                "mes": 1,
+                "ndvi": 0.762
+              },
+              {
+                "anio": 2025,
+                "mes": 2,
+                "ndvi": 0.727
+              },
+              {
+                "anio": 2025,
+                "mes": 3,
+                "ndvi": 0.753
+              },
+              {
+                "anio": 2025,
+                "mes": 4,
+                "ndvi": 0.781
+              },
+              {
+                "anio": 2025,
+                "mes": 5,
+                "ndvi": 0.75
+              },
+              {
+                "anio": 2025,
+                "mes": 6,
+                "ndvi": 0.719
+              },
+              {
+                "anio": 2025,
+                "mes": 7,
+                "ndvi": 0.67
+              },
+              {
+                "anio": 2025,
+                "mes": 8,
+                "ndvi": 0.729
+              },
+              {
+                "anio": 2025,
+                "mes": 9,
+                "ndvi": 0.759
+              },
+              {
+                "anio": 2025,
+                "mes": 10,
+                "ndvi": 0.836
+              },
+              {
+                "anio": 2025,
+                "mes": 11,
+                "ndvi": 0.867
+              },
+              {
+                "anio": 2025,
+                "mes": 12,
+                "ndvi": 0.845
+              },
+              {
+                "anio": 2026,
+                "mes": 1,
+                "ndvi": 0.764
+              },
+              {
+                "anio": 2026,
+                "mes": 2,
+                "ndvi": 0.763
+              },
+              {
+                "anio": 2026,
+                "mes": 3,
+                "ndvi": 0.803
+              },
+              {
+                "anio": 2026,
+                "mes": 4,
+                "ndvi": 0.804
+              },
+              {
+                "anio": 2026,
+                "mes": 5,
+                "ndvi": 0.713
+              },
+              {
+                "anio": 2026,
+                "mes": 6,
+                "ndvi": 0.724
+              },
+              {
+                "anio": 2026,
+                "mes": 7,
+                "ndvi": 0.696
+              },
+              {
+                "anio": 2026,
+                "mes": 8,
+                "ndvi": 0.722
+              },
+              {
+                "anio": 2026,
+                "mes": 9,
+                "ndvi": 0.736
+              },
+              {
+                "anio": 2026,
+                "mes": 10,
+                "ndvi": 0.846
+              }
+            ],
+            "fuente": "NASA HLS v002 (Landsat 8-9 + Sentinel-2, 30 m) vía Google Earth Engine",
+            "correlacion": 0.86,
+            "dif_media": 0.026,
+            "coincidencia_pct": 97,
+            "meses_comunes": 35,
+            "desde_cache": true
+          }
+        },
+        "agua_util_mm": 120,
+        "agua_util_origen": "valor típico (120 mm) porque no hay análisis de suelo",
+        "cdl": null,
+        "analisis_suelo": {
+          "hay_analisis": false,
+          "notas": [],
+          "alertas": []
+        },
+        "problemas": [
+          "helada"
+        ],
+        "actual": {
+          "id": "actual",
+          "nombre": "Rotación actual",
+          "descripcion": "Lo que se hizo en los últimos años: colza / canola / barbecho → trigo / barbecho.",
+          "tipo": "actual",
+          "anios": [
+            [
+              "colza",
+              "barbecho"
+            ],
+            [
+              "trigo",
+              "barbecho"
+            ]
+          ],
+          "erosion": {
+            "a_t_ha": 57.24,
+            "tolerancia_t": 7.0,
+            "ratio": 8.18,
+            "cumple": false,
+            "exigible": true,
+            "r": 454,
+            "k": 0.166,
+            "ls": 8.128,
+            "c": 0.0935,
+            "p": 1.0,
+            "pendiente_pct": 15.36,
+            "largo_m": 285,
+            "largo_origen": "srtm",
+            "aproximaciones": [],
+            "rango": {
+              "p10": 39.9,
+              "p50": 54.9,
+              "p90": 74.0,
+              "prob_supera_t": 1.0,
+              "simulaciones": 4000
+            }
+          },
+          "cobertura_mensual": [
+            0.467,
+            0.434,
+            0.403,
+            0.374,
+            0.393,
+            0.489,
+            0.668,
+            0.826,
+            0.907,
+            0.76,
+            0.568,
+            0.505
+          ],
+          "meses_descubierto": [
+            "ene",
+            "feb",
+            "mar",
+            "abr",
+            "may",
+            "jun"
+          ],
+          "ventana_peligro": [
+            "abr",
+            "may",
+            "jun"
+          ],
+          "riesgo": {
+            "seca": 0.0,
+            "helada": 1.0,
+            "calor": 0.0,
+            "deficit_medio": 0.002,
+            "perdida_media": 0.006,
+            "perdida_anio_seco": 0.009,
+            "caida_anio_seco": 0.009,
+            "por_cultivo": [
+              {
+                "cultivo": "colza",
+                "nombre": "Colza / canola",
+                "prob_seca": 0.0,
+                "ventana_agua": "floración y formación de silicuas: 30 jul a 8 sep",
+                "perdida_media": 0.0,
+                "perdida_anio_seco": 0.0,
+                "caida_anio_seco": 0.0,
+                "prob_helada": 1.0,
+                "ventana_helada": "floración: 30 jul a 3 sep"
+              },
+              {
+                "cultivo": "trigo",
+                "nombre": "Trigo",
+                "prob_seca": 0.0,
+                "ventana_agua": "espigazón y floración: 28 sep a 28 oct",
+                "perdida_media": 0.012,
+                "perdida_anio_seco": 0.019,
+                "caida_anio_seco": 0.019,
+                "prob_helada": 1.0,
+                "ventana_helada": "espigazón y floración: 28 sep a 23 oct",
+                "prob_calor": 0.0,
+                "ventana_calor": "llenado de grano: 23 oct a 17 nov"
+              }
+            ]
+          },
+          "ingreso": {
+            "usa_margenes": false,
+            "usd_ha_anio": null,
+            "usd_ha_anio_con_riesgo": null,
+            "indice_relativo": 0.57,
+            "renta_kg": null,
+            "renta_usd_ha": null,
+            "precio_soja": null,
+            "usd_ha_anio_despues_de_renta": null,
+            "equilibrios": [],
+            "margenes_estimados": []
+          },
+          "forraje": 0.0,
+          "carbono": {
+            "indice": 0.29,
+            "tendencia": "baja",
+            "meses_raices_vivas": 5.2
+          },
+          "puntajes": {
+            "suelo": 6,
+            "agua": 100,
+            "clima": 0,
+            "ingreso": 47,
+            "forraje": 0,
+            "simplicidad": 86,
+            "diversificacion": 52
+          },
+          "alertas": [
+            "Erosión estimada 57,2 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP."
+          ],
+          "penalizacion": 1.0,
+          "es_actual": true,
+          "puntaje_total": 37.1,
+          "explicacion": {
+            "por_que": [
+              "Es lo que se viene haciendo: la línea de base contra la que se comparan las demás."
+            ],
+            "evidencia": [
+              "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,166 × LS 8,13 × C 0,093 × P 1,0 = 57,2 t/ha/año.",
+              "LS con largo de ladera de 285 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+              "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR).",
+              "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+              "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 38 % limo, 35 % arcilla y 18,2 % de materia orgánica; K 0,166 (EPIC), tolerancia típica 7 t/ha/año, pendiente 15,4 %.",
+              "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ene, feb, mar, abr, may, jun.",
+              "Colza / canola: pasó su floración y formación de silicuas: 30 jul a 8 sep con menos de la mitad del agua que necesitaba en menos de 1 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+              "Trigo: pasó su espigazón y floración: 28 sep a 28 oct con menos de la mitad del agua que necesitaba en menos de 1 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+              "Trigo: en un año seco, de los que vienen 1 de cada 5, pierde 2 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+              "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+            ],
+            "beneficios": [],
+            "huecos": [
+              "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+              "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+              "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares."
+            ],
+            "riesgos": [
+              "Colza / canola: helada (≤ 2 °C a 2 m) en floración: 30 jul a 3 sep en 10 de cada 10 años.",
+              "Trigo: helada (≤ 2 °C a 2 m) en espigazón y floración: 28 sep a 23 oct en 10 de cada 10 años.",
+              "Erosión estimada 57,2 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP."
+            ]
+          }
+        },
+        "alternativas": [
+          {
+            "id": "campo_natural",
+            "nombre": "Campo natural con manejo del pastoreo",
+            "descripcion": "Mantener o recuperar el campo natural, ajustando la carga.",
+            "tipo": "ganadera",
+            "anios": [
+              [
+                "campo_natural",
+                "campo_natural"
+              ]
+            ],
+            "erosion": {
+              "a_t_ha": 12.24,
+              "tolerancia_t": 7.0,
+              "ratio": 1.75,
+              "cumple": true,
+              "exigible": false,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.02,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": [],
+              "rango": {
+                "p10": 8.5,
+                "p50": 11.7,
+                "p90": 15.8,
+                "prob_supera_t": 0.98,
+                "simulaciones": 4000
+              }
+            },
+            "cobertura_mensual": [
+              0.953,
+              0.952,
+              0.956,
+              0.955,
+              0.955,
+              0.955,
+              0.954,
+              0.954,
+              0.954,
+              0.953,
+              0.953,
+              0.953
+            ],
+            "meses_descubierto": [],
+            "ventana_peligro": [],
+            "riesgo": {
+              "seca": 0.286,
+              "helada": 0.0,
+              "calor": 0.0,
+              "deficit_medio": 0.352,
+              "perdida_media": null,
+              "perdida_anio_seco": null,
+              "caida_anio_seco": null,
+              "por_cultivo": [
+                {
+                  "cultivo": "campo_natural",
+                  "nombre": "Campo natural",
+                  "prob_seca": 0.286,
+                  "ventana_agua": "crecimiento de verano: 11 dic a 11 mar"
+                }
+              ]
+            },
+            "ingreso": {
+              "usa_margenes": false,
+              "usd_ha_anio": null,
+              "usd_ha_anio_con_riesgo": null,
+              "indice_relativo": 0.3,
+              "renta_kg": null,
+              "renta_usd_ha": null,
+              "precio_soja": null,
+              "usd_ha_anio_despues_de_renta": null,
+              "equilibrios": [],
+              "margenes_estimados": []
+            },
+            "forraje": 0.8,
+            "carbono": {
+              "indice": 1.0,
+              "tendencia": "sube",
+              "meses_raices_vivas": 12.0
+            },
+            "puntajes": {
+              "suelo": 42,
+              "agua": 48,
+              "clima": 100,
+              "ingreso": 7,
+              "forraje": 80,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "alertas": [
+              "Erosión estimada 12,2 t/ha/año, algo más de lo que aguanta este suelo (7). En campo natural el Plan de Uso no se exige, pero conviene ajustar la carga para que el campo no se pele."
+            ],
+            "penalizacion": 1.0,
+            "puntaje_total": 65.5,
+            "explicacion": {
+              "por_que": [
+                "Baja la erosión de 57,2 a 12,2 t/ha/año (tolerancia del suelo: 7).",
+                "El suelo queda descubierto 0 meses al año en vez de 6.",
+                "Produce forraje para el ganado durante más meses del año."
+              ],
+              "evidencia": [
+                "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,166 × LS 8,13 × C 0,020 × P 1,0 = 12,2 t/ha/año.",
+                "LS con largo de ladera de 285 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+                "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR).",
+                "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+                "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 38 % limo, 35 % arcilla y 18,2 % de materia orgánica; K 0,166 (EPIC), tolerancia típica 7 t/ha/año, pendiente 15,4 %.",
+                "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+                "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+              ],
+              "beneficios": [
+                "Es campo natural: el Plan de Uso no se exige (es para cultivos y pasturas sembradas).",
+                "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura.",
+                "Aporta forraje (80 % de las temporadas)."
+              ],
+              "huecos": [
+                "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+                "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+                "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares."
+              ],
+              "riesgos": [
+                "Erosión estimada 12,2 t/ha/año, algo más de lo que aguanta este suelo (7). En campo natural el Plan de Uso no se exige, pero conviene ajustar la carga para que el campo no se pele."
+              ]
+            }
+          },
+          {
+            "id": "maiz_trigo_cobertura",
+            "nombre": "Maíz → trigo, con cobertura",
+            "descripcion": "Alterna un cultivo de verano y uno de invierno, con cobertura antes del maíz: más rastrojo y menos suelo desnudo, sin soja.",
+            "tipo": "agrícola",
+            "anios": [
+              [
+                "cobertura",
+                "maiz"
+              ],
+              [
+                "trigo",
+                "barbecho"
+              ]
+            ],
+            "erosion": {
+              "a_t_ha": 83.16,
+              "tolerancia_t": 7.0,
+              "ratio": 11.88,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.1358,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "cobertura"
+              ],
+              "rango": {
+                "p10": 57.9,
+                "p50": 79.7,
+                "p90": 107.5,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "cobertura_mensual": [
+              0.79,
+              0.732,
+              0.649,
+              0.644,
+              0.697,
+              0.78,
+              0.822,
+              0.885,
+              0.894,
+              0.892,
+              0.852,
+              0.814
+            ],
+            "meses_descubierto": [],
+            "ventana_peligro": [],
+            "riesgo": {
+              "seca": 0.1,
+              "helada": 1.0,
+              "calor": 0.0,
+              "deficit_medio": 0.132,
+              "perdida_media": 0.249,
+              "perdida_anio_seco": 0.349,
+              "caida_anio_seco": 0.19,
+              "por_cultivo": [
+                {
+                  "cultivo": "cobertura",
+                  "nombre": "Cultivo de cobertura (avena negra / raigrás / vicia)"
+                },
+                {
+                  "cultivo": "maiz",
+                  "nombre": "Maíz de primera",
+                  "prob_seca": 0.2,
+                  "ventana_agua": "floración (panojamiento-cuaje): 30 nov a 4 ene",
+                  "perdida_media": 0.487,
+                  "perdida_anio_seco": 0.678,
+                  "caida_anio_seco": 0.36,
+                  "prob_calor": 0.0,
+                  "ventana_calor": "floración: 30 nov a 4 ene"
+                },
+                {
+                  "cultivo": "trigo",
+                  "nombre": "Trigo",
+                  "prob_seca": 0.0,
+                  "ventana_agua": "espigazón y floración: 28 sep a 28 oct",
+                  "perdida_media": 0.012,
+                  "perdida_anio_seco": 0.019,
+                  "caida_anio_seco": 0.019,
+                  "prob_helada": 1.0,
+                  "ventana_helada": "espigazón y floración: 28 sep a 23 oct",
+                  "prob_calor": 0.0,
+                  "ventana_calor": "llenado de grano: 23 oct a 17 nov"
+                }
+              ]
+            },
+            "ingreso": {
+              "usa_margenes": false,
+              "usd_ha_anio": null,
+              "usd_ha_anio_con_riesgo": null,
+              "indice_relativo": 0.62,
+              "renta_kg": null,
+              "renta_usd_ha": null,
+              "precio_soja": null,
+              "usd_ha_anio_despues_de_renta": null,
+              "equilibrios": [],
+              "margenes_estimados": []
+            },
+            "forraje": 0.05,
+            "carbono": {
+              "indice": 0.61,
+              "tendencia": "sube",
+              "meses_raices_vivas": 10.6
+            },
+            "puntajes": {
+              "suelo": 20,
+              "agua": 89,
+              "clima": 0,
+              "ingreso": 48,
+              "forraje": 5,
+              "simplicidad": 63,
+              "diversificacion": 58
+            },
+            "alertas": [
+              "Erosión estimada 83,2 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+              "En años secos, terminar la cobertura 30-45 días antes de sembrar el verano para no gastar el agua del perfil.",
+              "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?)."
+            ],
+            "penalizacion": 1.0,
+            "puntaje_total": 36.6,
+            "explicacion": {
+              "por_que": [
+                "El suelo queda descubierto 0 meses al año en vez de 6."
+              ],
+              "evidencia": [
+                "Erosión con la ecuación del Plan de Uso: A = R 454 × K 0,166 × LS 8,13 × C 0,136 × P 1,0 = 83,2 t/ha/año.",
+                "LS con largo de ladera de 285 m: sacado del relieve de la NASA (SRTM) siguiendo el camino del agua en el lote.",
+                "Factor C con relaciones de pérdida de suelo de Erosión 6.0 (MGAP - UdelaR), con aproximación propia para cultivo de cobertura.",
+                "Factor R 454 medido (GloREDa 1.2, JRC). Con solo la lluvia anual de GPM IMERG la fórmula de Renard y Freimund daría 1585.",
+                "Suelo (SoilGrids, mapa mundial de 250 m): 27 % arena, 38 % limo, 35 % arcilla y 18,2 % de materia orgánica; K 0,166 (EPIC), tolerancia típica 7 t/ha/año, pendiente 15,4 %.",
+                "Lluvia erosiva (GPM IMERG 1991-2025): se concentra en jun, may, jul. Meses con el suelo descubierto en esta rotación: ninguno.",
+                "Maíz de primera: pasó su floración (panojamiento-cuaje): 30 nov a 4 ene con menos de la mitad del agua que necesitaba en 2 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+                "Maíz de primera: en un año seco, de los que vienen 1 de cada 5, pierde 68 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+                "Trigo: pasó su espigazón y floración: 28 sep a 28 oct con menos de la mitad del agua que necesitaba en menos de 1 de cada 10 años (lluvia de GPM IMERG y evaporación de NASA POWER, balance FAO-56).",
+                "Trigo: en un año seco, de los que vienen 1 de cada 5, pierde 2 % de lo que rendiría con agua suficiente (FAO-33 con el agua de toda la temporada, lluvia de GPM IMERG y evaporación de NASA POWER).",
+                "Satélite (MODIS NDVI): en 2022-2026 la sección no tuvo meses con el suelo descubierto."
+              ],
+              "beneficios": [
+                "Suma carbono al suelo: raíces vivas casi todo el año y mucho rastrojo o pastura."
+              ],
+              "huecos": [
+                "Sin análisis de suelo de esta sección: el agua útil parte de un valor típico (120 mm).",
+                "Suelo del mapa mundial SoilGrids (250 m): el factor K sale de la textura y el carbono; la tolerancia es un valor típico (7 t/ha/año) porque no hay una oficial para este lugar.",
+                "Sin márgenes propios por cultivo: el ingreso es un índice relativo, no dólares.",
+                "Aproximación propia para cultivo de cobertura: no está en Erosión 6.0 y se usó Cereales de Invierno con rendimiento bajo."
+              ],
+              "riesgos": [
+                "Trigo: helada (≤ 2 °C a 2 m) en espigazón y floración: 28 sep a 23 oct en 10 de cada 10 años.",
+                "Erosión estimada 83,2 t/ha/año, por encima de la tolerancia del suelo (7): con estos datos no cumpliría un Plan de Uso del MGAP.",
+                "En años secos, terminar la cobertura 30-45 días antes de sembrar el verano para no gastar el agua del perfil.",
+                "Incluye maíz de primera, que contaste que te falló: conviene revisar por qué antes de repetirlo (¿la chacra, el año, el manejo?).",
+                "El clima se está corriendo: para maíz de primera la seca en floración pasó de 1 de cada 10 años (1991-2008) a 4 de cada 10 años (2009-2025)."
+              ]
+            }
+          }
+        ],
+        "nota_tolerancia": "Con solo cultivos, ninguna rotación cumple lo que aguanta el suelo en este lote: la mejor (maíz → trigo, con cobertura) perdería 83,2 t/ha/año y el suelo aguanta 7",
+        "todas": [
+          {
+            "id": "campo_natural",
+            "nombre": "Campo natural con manejo del pastoreo",
+            "puntaje_total": 65.5,
+            "puntajes": {
+              "suelo": 42,
+              "agua": 48,
+              "clima": 100,
+              "ingreso": 7,
+              "forraje": 80,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "erosion": {
+              "a_t_ha": 12.24,
+              "tolerancia_t": 7.0,
+              "ratio": 1.75,
+              "cumple": true,
+              "exigible": false,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.02,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": [],
+              "rango": {
+                "p10": 8.5,
+                "p50": 11.7,
+                "p90": 15.8,
+                "prob_supera_t": 0.98,
+                "simulaciones": 4000
+              }
+            },
+            "riesgo": {
+              "seca": 0.286
+            }
+          },
+          {
+            "id": "pradera_permanente",
+            "nombre": "Pradera permanente (renovación cada 4 años)",
+            "puntaje_total": 67.7,
+            "puntajes": {
+              "suelo": 30,
+              "agua": 16,
+              "clima": 100,
+              "ingreso": 19,
+              "forraje": 100,
+              "simplicidad": 100,
+              "diversificacion": 26
+            },
+            "erosion": {
+              "a_t_ha": 22.65,
+              "tolerancia_t": 7.0,
+              "ratio": 3.24,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.037,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": []
+            },
+            "riesgo": {
+              "seca": 0.429
+            }
+          },
+          {
+            "id": "verdeo_sorgo",
+            "nombre": "Verdeo de invierno → sorgo forrajero",
+            "puntaje_total": 67.3,
+            "puntajes": {
+              "suelo": 16,
+              "agua": 67,
+              "clima": 100,
+              "ingreso": 40,
+              "forraje": 90,
+              "simplicidad": 68,
+              "diversificacion": 52
+            },
+            "erosion": {
+              "a_t_ha": 97.96,
+              "tolerancia_t": 7.0,
+              "ratio": 13.99,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.16,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "verdeo"
+              ]
+            },
+            "riesgo": {
+              "seca": 0.2
+            }
+          },
+          {
+            "id": "maiz_trigo_cobertura",
+            "nombre": "Maíz → trigo, con cobertura",
+            "puntaje_total": 36.6,
+            "puntajes": {
+              "suelo": 20,
+              "agua": 89,
+              "clima": 0,
+              "ingreso": 48,
+              "forraje": 5,
+              "simplicidad": 63,
+              "diversificacion": 58
+            },
+            "erosion": {
+              "a_t_ha": 83.16,
+              "tolerancia_t": 7.0,
+              "ratio": 11.88,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.1358,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": [
+                "cobertura"
+              ],
+              "rango": {
+                "p10": 57.9,
+                "p50": 79.7,
+                "p90": 107.5,
+                "prob_supera_t": 1.0,
+                "simulaciones": 4000
+              }
+            },
+            "riesgo": {
+              "seca": 0.1
+            }
+          },
+          {
+            "id": "trigo_colza_cebada",
+            "nombre": "Trigo → colza → cebada",
+            "puntaje_total": 35.0,
+            "puntajes": {
+              "suelo": 6,
+              "agua": 100,
+              "clima": 0,
+              "ingreso": 46,
+              "forraje": 0,
+              "simplicidad": 72,
+              "diversificacion": 58
+            },
+            "erosion": {
+              "a_t_ha": 65.66,
+              "tolerancia_t": 7.0,
+              "ratio": 9.38,
+              "cumple": false,
+              "exigible": true,
+              "r": 454,
+              "k": 0.166,
+              "ls": 8.128,
+              "c": 0.1073,
+              "p": 1.0,
+              "pendiente_pct": 15.36,
+              "largo_m": 285,
+              "largo_origen": "srtm",
+              "aproximaciones": []
+            },
+            "riesgo": {
+              "seca": 0.0
+            }
+          }
+        ],
+        "recomendada_id": "campo_natural",
+        "aceptabilidad": null,
+        "escala_lote": {
+          "suelo": [
+            6,
+            42
+          ],
+          "agua": [
+            16,
+            100
+          ],
+          "clima": [
+            0,
+            100
+          ],
+          "ingreso": [
+            7,
+            48
+          ],
+          "forraje": [
+            0,
+            100
+          ],
+          "simplicidad": [
+            63,
+            100
+          ],
+          "diversificacion": [
+            26,
+            58
+          ]
+        }
+      }
+    ],
+    "plan": {
+      "temporadas": [
+        {
+          "tipo": "verano",
+          "anio": 2026,
+          "etiqueta": "Verano 2026/27"
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2027,
+          "etiqueta": "Invierno 2027"
+        },
+        {
+          "tipo": "verano",
+          "anio": 2027,
+          "etiqueta": "Verano 2027/28"
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2028,
+          "etiqueta": "Invierno 2028"
+        },
+        {
+          "tipo": "verano",
+          "anio": 2028,
+          "etiqueta": "Verano 2028/29"
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2029,
+          "etiqueta": "Invierno 2029"
+        },
+        {
+          "tipo": "verano",
+          "anio": 2029,
+          "etiqueta": "Verano 2029/30"
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2030,
+          "etiqueta": "Invierno 2030"
+        },
+        {
+          "tipo": "verano",
+          "anio": 2030,
+          "etiqueta": "Verano 2030/31"
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2031,
+          "etiqueta": "Invierno 2031"
+        }
+      ],
+      "secciones": [
+        {
+          "seccion_id": "s1",
+          "seccion": "El Volcán",
+          "area_ha": 40.9,
+          "rotacion_id": "campo_natural",
+          "rotacion": "Campo natural con manejo del pastoreo",
+          "fase": 0,
+          "cultivos": [
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural"
+          ],
+          "siembras": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "proxima_siembra": null,
+          "sugerida_id": "campo_natural",
+          "sugerida": "Campo natural con manejo del pastoreo",
+          "elegida": false
+        },
+        {
+          "seccion_id": "s2",
+          "seccion": "La Vega",
+          "area_ha": 40.9,
+          "rotacion_id": "campo_natural",
+          "rotacion": "Campo natural con manejo del pastoreo",
+          "fase": 0,
+          "cultivos": [
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural"
+          ],
+          "siembras": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "proxima_siembra": null,
+          "sugerida_id": "campo_natural",
+          "sugerida": "Campo natural con manejo del pastoreo",
+          "elegida": false
+        },
+        {
+          "seccion_id": "s3",
+          "seccion": "El Lago",
+          "area_ha": 40.9,
+          "rotacion_id": "campo_natural",
+          "rotacion": "Campo natural con manejo del pastoreo",
+          "fase": 0,
+          "cultivos": [
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural",
+            "campo_natural"
+          ],
+          "siembras": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "proxima_siembra": null,
+          "sugerida_id": "campo_natural",
+          "sugerida": "Campo natural con manejo del pastoreo",
+          "elegida": false
+        }
+      ],
+      "resumen_temporadas": [
+        {
+          "tipo": "verano",
+          "anio": 2026,
+          "etiqueta": "Verano 2026/27",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2027,
+          "etiqueta": "Invierno 2027",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "verano",
+          "anio": 2027,
+          "etiqueta": "Verano 2027/28",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2028,
+          "etiqueta": "Invierno 2028",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "verano",
+          "anio": 2028,
+          "etiqueta": "Verano 2028/29",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2029,
+          "etiqueta": "Invierno 2029",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "verano",
+          "anio": 2029,
+          "etiqueta": "Verano 2029/30",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2030,
+          "etiqueta": "Invierno 2030",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "verano",
+          "anio": 2030,
+          "etiqueta": "Verano 2030/31",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        },
+        {
+          "tipo": "invierno",
+          "anio": 2031,
+          "etiqueta": "Invierno 2031",
+          "area_por_cultivo": {
+            "campo_natural": 122.7
+          },
+          "pct_cubierto": 100,
+          "ha_forraje": 98.2
+        }
+      ],
+      "erosion_media_plan": 13.12,
+      "erosion_media_actual": 56.09,
+      "erosion_media_sugerida": 13.12,
+      "equilibrio": {
+        "meta": 40,
+        "pct_sugerido": 0,
+        "nota": "Con lo que aguanta el suelo de cada lote, las sugeridas llegan a 0 % agrícola y no al 40 % que marcaste: más agricultura se pasaría de la tolerancia en algún lote."
+      }
+    },
+    "prioridades": {
+      "suelo": 4,
+      "agua": 2,
+      "clima": 3,
+      "ingreso": 3,
+      "forraje": 5,
+      "simplicidad": 2,
+      "diversificacion": 2
+    },
+    "fuentes": [
+      {
+        "nombre": "NASA GPM IMERG V07 (diario, 0,1°) vía Giovanni (GES DISC)",
+        "url": "https://gpm.nasa.gov/data/imerg",
+        "uso": "lluvia desde junio de 2000: balance de agua, seca, erosividad"
+      },
+      {
+        "nombre": "NASA POWER (diario, AG)",
+        "url": "https://power.larc.nasa.gov",
+        "uso": "temperatura, radiación, humedad y viento (ET0), helada, calor; lluvia antes de 2000"
+      },
+      {
+        "nombre": "NASA MODIS MOD13Q1 v061 vía ORNL DAAC",
+        "url": "https://modis.ornl.gov/rst/api/v1/",
+        "uso": "cobertura del suelo por sección (NDVI)"
+      },
+      {
+        "nombre": "GloREDa 1.2 (JRC, Comisión Europea): lluvia erosiva medida en 3939 estaciones, mapa de ~1 km",
+        "url": "https://doi.org/10.5281/zenodo.8036998",
+        "uso": "factor R de la ecuación de erosión"
+      },
+      {
+        "nombre": "NASA HLS v002 (Landsat 8-9 + Sentinel-2, 30 m) vía Google Earth Engine",
+        "url": "https://hls.gsfc.nasa.gov/",
+        "uso": "verdor y NDVI mensual por polígono a escala de chacra"
+      },
+      {
+        "nombre": "NASA GLDAS 2.1 Noah (0,25°) vía Google Earth Engine",
+        "url": "https://ldas.gsfc.nasa.gov/gldas",
+        "uso": "humedad de suelo por capas y contraste en secas históricas (2000-hoy)"
+      },
+      {
+        "nombre": "NASA ECOSTRESS (ISS, 70 m) vía LP DAAC / Earth Engine",
+        "url": "https://ecostress.jpl.nasa.gov/",
+        "uso": "temperatura adentro del potrero a 70 m en días puntuales (por ahora, solo en el campo de ejemplo)"
+      },
+      {
+        "nombre": "FAO/IIASA GAEZ v4 (res05, ~9 km)",
+        "url": "https://gaez.fao.org/",
+        "uso": "aptitud de cada cultivo de secano en la zona del campo (celda de ~9 km), con el clima de 2011-2040 (5 modelos), en las tarjetas de las rotaciones"
+      },
+      {
+        "nombre": "MGAP-DGRN (CONEAT, factor K, tolerancia, pendiente, factor R, padrones)",
+        "url": "https://dgrn.mgap.gub.uy/arcgis/rest/services",
+        "uso": "suelo y ecuación de erosión del Plan de Uso"
+      },
+      {
+        "nombre": "INUMET, estaciones por hora (datos abiertos)",
+        "url": "https://catalogodatos.gub.uy/dataset/inumet-observaciones-meteorologicas-temperatura-del-aire-en-el-uruguay",
+        "uso": "corrección de la temperatura de NASA POWER, mes a mes con 7 estaciones"
+      },
+      {
+        "nombre": "NASA NEX-GDDP-CMIP6 (30 modelos, 25 km) vía Google Earth Engine",
+        "url": "https://www.nccs.nasa.gov/services/data-collections/land-based-products/nex-gddp-cmip6",
+        "uso": "cambio de temperatura y lluvia proyectado para 2026-2035 en la celda del campo"
+      },
+      {
+        "nombre": "FAO-56 (Allen et al. 1998)",
+        "url": "https://www.fao.org/3/x0490e/x0490e00.htm",
+        "uso": "ET0 y coeficientes de cultivo"
+      }
+    ]
+  },
+  "plan": {
+    "temporadas": [
+      {
+        "tipo": "verano",
+        "anio": 2026,
+        "etiqueta": "Verano 2026/27"
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2027,
+        "etiqueta": "Invierno 2027"
+      },
+      {
+        "tipo": "verano",
+        "anio": 2027,
+        "etiqueta": "Verano 2027/28"
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2028,
+        "etiqueta": "Invierno 2028"
+      },
+      {
+        "tipo": "verano",
+        "anio": 2028,
+        "etiqueta": "Verano 2028/29"
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2029,
+        "etiqueta": "Invierno 2029"
+      },
+      {
+        "tipo": "verano",
+        "anio": 2029,
+        "etiqueta": "Verano 2029/30"
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2030,
+        "etiqueta": "Invierno 2030"
+      },
+      {
+        "tipo": "verano",
+        "anio": 2030,
+        "etiqueta": "Verano 2030/31"
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2031,
+        "etiqueta": "Invierno 2031"
+      }
+    ],
+    "secciones": [
+      {
+        "seccion_id": "s1",
+        "seccion": "El Volcán",
+        "area_ha": 40.9,
+        "rotacion_id": "campo_natural",
+        "rotacion": "Campo natural con manejo del pastoreo",
+        "fase": 0,
+        "cultivos": [
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural"
+        ],
+        "siembras": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "proxima_siembra": null,
+        "sugerida_id": "campo_natural",
+        "sugerida": "Campo natural con manejo del pastoreo",
+        "elegida": false
+      },
+      {
+        "seccion_id": "s2",
+        "seccion": "La Vega",
+        "area_ha": 40.9,
+        "rotacion_id": "campo_natural",
+        "rotacion": "Campo natural con manejo del pastoreo",
+        "fase": 0,
+        "cultivos": [
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural"
+        ],
+        "siembras": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "proxima_siembra": null,
+        "sugerida_id": "campo_natural",
+        "sugerida": "Campo natural con manejo del pastoreo",
+        "elegida": false
+      },
+      {
+        "seccion_id": "s3",
+        "seccion": "El Lago",
+        "area_ha": 40.9,
+        "rotacion_id": "campo_natural",
+        "rotacion": "Campo natural con manejo del pastoreo",
+        "fase": 0,
+        "cultivos": [
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural",
+          "campo_natural"
+        ],
+        "siembras": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "proxima_siembra": null,
+        "sugerida_id": "campo_natural",
+        "sugerida": "Campo natural con manejo del pastoreo",
+        "elegida": false
+      }
+    ],
+    "resumen_temporadas": [
+      {
+        "tipo": "verano",
+        "anio": 2026,
+        "etiqueta": "Verano 2026/27",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2027,
+        "etiqueta": "Invierno 2027",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "verano",
+        "anio": 2027,
+        "etiqueta": "Verano 2027/28",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2028,
+        "etiqueta": "Invierno 2028",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "verano",
+        "anio": 2028,
+        "etiqueta": "Verano 2028/29",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2029,
+        "etiqueta": "Invierno 2029",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "verano",
+        "anio": 2029,
+        "etiqueta": "Verano 2029/30",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2030,
+        "etiqueta": "Invierno 2030",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "verano",
+        "anio": 2030,
+        "etiqueta": "Verano 2030/31",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      },
+      {
+        "tipo": "invierno",
+        "anio": 2031,
+        "etiqueta": "Invierno 2031",
+        "area_por_cultivo": {
+          "campo_natural": 122.7
+        },
+        "pct_cubierto": 100,
+        "ha_forraje": 98.2
+      }
+    ],
+    "erosion_media_plan": 13.12,
+    "erosion_media_actual": 56.09,
+    "erosion_media_sugerida": 13.12,
+    "equilibrio": {
+      "meta": 40,
+      "pct_sugerido": 0,
+      "nota": "Con lo que aguanta el suelo de cada lote, las sugeridas llegan a 0 % agrícola y no al 40 % que marcaste: más agricultura se pasaría de la tolerancia en algún lote."
+    }
+  }
+}

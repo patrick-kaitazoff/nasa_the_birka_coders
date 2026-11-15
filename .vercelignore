@@ -1,0 +1,15 @@
+# Lo que no se sube a Vercel. El frontend lo compila Vercel (buildCommand de vercel.json): sube el código, no dist.
+# Con / adelante: sin la barra, «ejemplos» también sacaba frontend/dist/ejemplos.
+/backend/cache
+/backend/tests
+/backend/scripts
+/backend/requirements.txt
+/frontend/node_modules
+/frontend/dist
+/pruebas
+/ejemplos
+/README.md
+/iniciar.sh
+*.env
+.netrc
+_netrc

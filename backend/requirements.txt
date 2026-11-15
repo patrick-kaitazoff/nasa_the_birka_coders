@@ -1,0 +1,13 @@
+fastapi>=0.160
+uvicorn[standard]>=0.50
+httpx>=0.28
+numpy>=2.3
+pandas>=3.0
+shapely>=2.1
+pillow>=11
+openpyxl>=3.1
+pypdf>=6.0
+python-multipart>=0.0.20
+google-genai>=3.0
+vercel>=0.12
+pytest>=8.0

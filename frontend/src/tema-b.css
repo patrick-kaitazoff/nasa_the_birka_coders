@@ -1,0 +1,95 @@
+/* Estética B (la de la portada /b) aplicada a la herramienta: crema, lima y oliva; Geist fina, Geist Mono en
+ * mayúsculas para lo chico (pestañas, botones, etiquetas) y Space Grotesk para los números grandes.
+ *
+ * Va en un archivo aparte, cargado después de estilos.css, para no reescribir esa hoja (la siguen tocando
+ * otros cambios en paralelo): casi todo sale de cambiar las variables; lo que no, se pisa acá abajo.
+ * Los colores de los datos (cobertura del suelo, NDVI, lluvia, cultivos) NO cambian: son parte del dato. */
+
+:root {
+  --verde-900: #2a2c1a;
+  --verde-800: #3a3d25;
+  --verde-700: #4f5333;
+  --verde-500: #8a9150;
+  --verde-200: #e3ec9a;
+  --verde-100: #f3f7cf;
+  --lima: #ecf86e;
+  --fondo: #f2f0e1;
+  --papel: #fbfaf2;
+  --linea: rgba(27, 28, 20, 0.11);
+  --linea-fuerte: rgba(27, 28, 20, 0.22);
+  --texto: #1b1c14;
+  --texto-2: #55554a;
+  --texto-3: #8d8c7d;
+  --radio: 18px;
+  --radio-chico: 10px;
+  --sombra: 0 1px 2px rgba(42, 44, 26, 0.05), 0 6px 18px rgba(42, 44, 26, 0.06);
+  --sombra-fuerte: 0 18px 40px -12px rgba(42, 44, 26, 0.28);
+  --fuente: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fuente-titulo: "Geist", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --fuente-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --fuente-num: "Space Grotesk", "Geist", system-ui, sans-serif;
+}
+
+h1, h2, h3, h4 { font-weight: 500; letter-spacing: -0.035em; }
+.panel-titulo h2 { font-size: 30px; font-weight: 400; letter-spacing: -0.05em; line-height: 1.05; }
+:focus-visible { outline-color: var(--verde-800); }
+
+/* lo chico va en mono y en mayúsculas */
+.pestania, .movil-nav button, .etq, .etq-suave, .insignia, .segmentado button, .selector-idioma,
+.cifra .rotulo, .paso-n, .marca small {
+  font-family: var(--fuente-mono); text-transform: uppercase; letter-spacing: .04em;
+}
+.marca small { font-size: 10.5px; }
+
+/* los números grandes */
+.cifra .valor, .puntaje-total b, .diez .num { font-family: var(--fuente-num); font-weight: 400; letter-spacing: -0.03em; }
+
+/* barra de arriba: oliva con la marca en lima */
+.barra { background: var(--verde-800); border-bottom: 0; color: #f2f0e1; }
+.notch { --notch-fondo: var(--verde-800); }
+.marca { font-family: var(--fuente); font-weight: 500; letter-spacing: -0.03em; font-size: 20px; }
+.marca small { color: rgba(242, 240, 225, 0.7); }
+.marca svg rect { fill: transparent; }
+.marca svg path:first-of-type { stroke: var(--lima); }
+.marca svg path + path { stroke: var(--lima); }
+.marca svg circle { fill: var(--lima); }
+.barra .campo-nombre { color: rgba(242, 240, 225, 0.85); }
+
+/* pestañas: texto mono y la elegida subrayada en oliva */
+.pestanias { background: var(--fondo); padding-top: 10px; }
+.pestania { font-size: 12px; font-weight: 500; }
+.pestania.activa { color: var(--verde-900); border-bottom-color: var(--verde-800); }
+.pestania .num { background: var(--lima); color: var(--verde-800); font-family: var(--fuente-num); letter-spacing: 0; }
+.movil-nav button { font-size: 11.5px; font-weight: 500; }
+.movil-nav button.activa { color: var(--verde-900); box-shadow: inset 0 3px 0 var(--verde-800); }
+
+/* botones: el principal oliva con texto lima, como en la portada */
+.btn { font-weight: 500; border-radius: var(--radio-chico); }
+.btn:hover { background: #f1efe0; }
+.btn.primario { background: var(--verde-800); border-color: var(--verde-800); color: var(--lima); }
+.btn.primario:hover { background: var(--verde-900); }
+.btn.secundario { background: var(--verde-100); border-color: var(--verde-200); color: var(--verde-800); }
+.chip { font-weight: 500; background: var(--papel); }
+.chip.on { background: var(--verde-800); border-color: var(--verde-800); color: var(--lima); }
+.segmentado { background: var(--papel); }
+.segmentado button { font-size: 11px; font-weight: 500; }
+.segmentado button.on { background: var(--verde-800); color: var(--lima); }
+
+/* etiquetas: la recomendada en lima */
+.etq { font-weight: 500; border-radius: 6px; padding: 3px 8px; }
+.etq.rec { background: var(--lima); color: var(--verde-800); }
+.etq.bien { background: var(--verde-100); color: var(--verde-800); }
+.etq-suave { color: var(--verde-800); background: var(--verde-100); font-size: 10px; }
+.tarjeta-titulo .icono { background: var(--lima); color: var(--verde-800); }
+
+/* chat: las burbujas del productor en oliva */
+.msg.asesor .burbuja { background: #efede0; }
+.msg.productor .burbuja { background: var(--verde-800); color: #f7f6ea; }
+.columna-chat { background: var(--papel); }
+
+/* cajas y tarjetas un poco más redondeadas y planas */
+.tarjeta, .caja { box-shadow: none; }
+.presentacion-pasos li::before { background: var(--verde-800); color: var(--lima); }
+.hallazgos { border-left-color: var(--lima); }
+
+.cifra .rotulo { font-size: 11px; }

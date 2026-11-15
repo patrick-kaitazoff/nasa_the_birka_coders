@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es-UY">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- fundido entre la portada y la herramienta: la regla va acá, antes que todo, para que la página nueva
+         ya esté anotada cuando el navegador la muestra (si dependía del CSS, a veces llegaba tarde) -->
+    <style>@view-transition { navigation: auto; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Seasons Ahead: comparar rotaciones en cada sección de tu campo con datos de la NASA y del MGAP." />
+    <meta name="theme-color" content="#F2F0E1" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet" />
+    <title>Seasons Ahead — tu campo, visto desde el espacio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/portada-b/main.tsx"></script>
+  </body>
+</html>

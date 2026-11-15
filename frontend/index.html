@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="es-UY">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- lo primero que se ve, antes de cualquier código: una foto del primer cuadro del trigo (y debajo, los mismos
+         colores en degradé por si la foto tarda). El trigo 3D aparece encima, fundiéndose, cuando ya dibujó. Antes
+         se veía ~1 s el fondo azul noche de la página mientras bajaba el 3D. -->
+    <link rel="preload" as="image" href="/src/landing/portada-trigo.webp" fetchpriority="high" />
+    <style>
+      html { background: url("/src/landing/portada-trigo.webp") center / cover no-repeat fixed,
+        linear-gradient(180deg, #5f455b 0%, #80596f 22%, #c4807f 40%, #f8a065 52%, #f6c870 58.5%, #8c6a2a 60%, #53350a 100%) fixed #5f455b; }
+      body { margin: 0; background: transparent; }
+    </style>
+    <!-- las letras de la portada van en el proyecto y se piden ya, junto con la foto. Antes venían de
+         Google: una hoja de estilos que frenaba la primera pintura, dos servidores más a los que conectarse, y el
+         texto aparecía con la letra del sistema y saltaba de renglón al llegar Inter. Son los mismos archivos de
+         Google Fonts (parte «latin», con todos los pesos adentro; licencia OFL). -->
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/src/landing/fuentes/fraunces-latin.woff2" />
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/src/landing/fuentes/inter-latin.woff2" />
+    <style>
+      @font-face { font-family: "Fraunces"; font-style: normal; font-weight: 500 700; font-display: swap;
+        src: url("/src/landing/fuentes/fraunces-latin.woff2") format("woff2"); }
+      @font-face { font-family: "Inter"; font-style: normal; font-weight: 400 700; font-display: swap;
+        src: url("/src/landing/fuentes/inter-latin.woff2") format("woff2"); }
+    </style>
+    <!-- fundido entre la portada y la herramienta: la regla va acá, antes que todo, para que la página nueva
+         ya esté anotada cuando el navegador la muestra (si dependía del CSS, a veces llegaba tarde) -->
+    <style>@view-transition { navigation: auto; }</style>
+    <!-- la herramienta se arma por adelantado apenas se apoya el mouse (o el dedo) en un botón que va a /app: al
+         tocarlo ya está lista y el fundido sigue la misma escena sin quedarse quieto esperando. Solo /app
+         a secas y los ejemplos: /app?vacio borra lo guardado, y eso no puede pasar sin tocar el botón.
+         También los ejemplos. Armar el Plan y el relieve 3D ocupa la página más de un segundo, y eso pasaba
+         después del clic, detrás de «Abriendo el campo de ejemplo». El ejemplo no pisa lo guardado, así que se
+         puede armar con el mouse apoyado: al tocar, la portada se funde directo con el Plan ya dibujado. -->
+    <script type="speculationrules">
+      { "prerender": [{ "source": "list", "urls": ["/app", "/app?demo", "/app?demo=pucon", "/app?demo=mosela", "/app?demo=lunarejo"], "eagerness": "moderate" }] }
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Seasons Ahead: comparar rotaciones en cada sección de tu campo con datos de la NASA y del MGAP." />
+    <meta name="theme-color" content="#1a1830" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <!-- las letras de la herramienta, bajadas de antemano y sin apuro: al tocar un botón ya están -->
+    <link rel="prefetch" as="font" type="font/woff2" crossorigin href="/src/fuentes/geist-latin.woff2" />
+    <link rel="prefetch" as="font" type="font/woff2" crossorigin href="/src/fuentes/geist-mono-latin.woff2" />
+    <title>Seasons Ahead — tu campo, visto desde el espacio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/landing/main.tsx"></script>
+  </body>
+</html>
